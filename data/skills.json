@@ -1,0 +1,55 @@
+[
+    {
+        "id": "skills-programming",
+        "icon": "fas fa-code",
+        "title": "Programming & AI",
+        "items": [
+            { "name": "Python", "level": "expert" },
+            { "name": "TensorFlow", "level": "advanced" },
+            { "name": "scikit-learn", "level": "advanced" },
+            { "name": "pandas", "level": "expert" },
+            { "name": "NumPy", "level": "advanced" },
+            { "name": "FastAPI", "level": "intermediate" },
+            { "name": "API Development", "level": "advanced" }
+        ]
+    },
+    {
+        "id": "skills-databases",
+        "icon": "fas fa-database",
+        "title": "Databases & Systems",
+        "items": [
+            { "name": "MS SQL Server", "level": "expert" },
+            { "name": "Oracle", "level": "advanced" },
+            { "name": "T-SQL", "level": "expert" },
+            { "name": "PostgreSQL", "level": "advanced" },
+            { "name": "Power BI", "level": "advanced" },
+            { "name": "OLAP", "level": "expert" }
+        ]
+    },
+    {
+        "id": "skills-erp",
+        "icon": "fas fa-cogs",
+        "title": "ERP & CRM",
+        "items": [
+            { "name": "Bitrix24", "level": "expert" },
+            { "name": "PlanFix", "level": "expert" },
+            { "name": "SAP Integration", "level": "advanced" },
+            { "name": "1C:Enterprise", "level": "expert" },
+            { "name": "WMS/TMS", "level": "advanced" },
+            { "name": "Business Process", "level": "expert" }
+        ]
+    },
+    {
+        "id": "skills-web",
+        "icon": "fas fa-globe",
+        "title": "Web & Marketing",
+        "items": [
+            { "name": "WordPress", "level": "advanced" },
+            { "name": "PHP", "level": "intermediate" },
+            { "name": "JavaScript", "level": "advanced" },
+            { "name": "SEO", "level": "expert" },
+            { "name": "Google Ads", "level": "advanced" },
+            { "name": "Analytics", "level": "advanced" }
+        ]
+    }
+]

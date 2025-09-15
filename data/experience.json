@@ -1,0 +1,46 @@
+[
+    {
+        "date": "2022 - Present",
+        "title": "IT Consultant",
+        "company": "Legal Status UAB - International",
+        "responsibilities": [
+            "Developed AI-integrated solutions for legal workflow automation",
+            "Implemented document processing system reducing manual work by 70%",
+            "Created multi-language client communication automation",
+            "Managed technical infrastructure for international legal services"
+        ]
+    },
+    {
+        "date": "2020 - Present",
+        "title": "Freelance IT Specialist",
+        "company": "Remote Work - Sweden",
+        "responsibilities": [
+            "Delivered 25+ web development and automation projects",
+            "Specialized in Python automation and API integrations",
+            "Provided SEO and digital marketing services",
+            "Maintained 98% client satisfaction rate"
+        ]
+    },
+    {
+        "date": "2016 - 2020",
+        "title": "Director and Co-owner",
+        "company": "IT Company \"Solutions of the Future\" - Minsk, BY",
+        "responsibilities": [
+            "Led company specializing in ERP and CRM implementation",
+            "Managed team of 8 developers and 3 business analysts",
+            "Grew annual revenue from $50K to $300K",
+            "Implemented quality management system (ISO 9001)"
+        ]
+    },
+    {
+        "date": "2011 - 2016",
+        "title": "Head of Software Development",
+        "company": "\"Armtek\" Group - Minsk, BY",
+        "responsibilities": [
+            "Managed team of 12 developers using Agile methodology",
+            "Led automation project for 26 retail locations",
+            "Implemented WMS, TMS systems with SAP integration",
+            "Reduced operational costs by 35% through process automation"
+        ]
+    }
+]

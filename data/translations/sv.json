@@ -1,0 +1,120 @@
+{
+    "header": {
+        "name": "Olga Petrovskaya",
+        "subtitle": "Python AI-utvecklare & ERP/CRM-konsult",
+        "phone": "+46 737 686 471",
+        "email": "5441700@gmail.com",
+        "location": "Charlottenberg, Sverige",
+        "linkedin": "LinkedIn",
+        "github": "GitHub",
+        "phone_full": "+46 737 686 471",
+        "email_full": "5441700@gmail.com",
+        "linkedin_full": "linkedin.com/in/olga-petrovskaya",
+        "github_full": "github.com/PtOlga"
+    },
+    "nav": {
+        "about": "Om mig",
+        "projects": "Projekt",
+        "skills": "Färdigheter",
+        "experience": "Erfarenhet",
+        "resume": "CV",
+        "contact": "Kontakt"
+    },
+    "about": {
+        "title": "Om Mig",
+        "description": "Python AI-utvecklare & ERP/CRM-konsult med 15+ års erfarenhet av affärsautomatisering och systemimplementering. För närvarande utvecklar jag AI-integrerade lösningar för internationella juridiska tjänster samtidigt som jag frilansar med olika IT-projekt. Baserad i Sverige, arbetar med kunder globalt.",
+        "stats_years": "Års erfarenhet",
+        "stats_projects": "Projekt slutförda",
+        "stats_stores": "Butiker automatiserade",
+        "stats_languages": "Språk"
+    },
+    "projects": {
+        "title": "Utvalda Projekt",
+        "description": "Ett urval av mina senaste arbeten inom AI-automatisering, ERP-implementering och webbutveckling",
+        "filter_all": "Alla projekt",
+        "filter_ai": "AI & Automation",
+        "filter_erp": "ERP/CRM",
+        "filter_web": "Webbutveckling",
+        "live_demo": "Live Demo",
+        "source_code": "Källkod"
+    },
+    "github": {
+        "title": "Senaste GitHub-aktivitet",
+        "recent_repos": "Senaste arkiv",
+        "stats_title": "GitHub Statistik",
+        "public_repos": "Publika arkiv:",
+        "most_used_lang": "Mest använda språk:",
+        "github_since": "GitHub sedan:"
+    },
+    "skills": {
+        "title": "Tekniska Färdigheter",
+        "description": "Teknologier och verktyg jag regelbundet arbetar med"
+    },
+    "experience": {
+        "title": "Professionell Erfarenhet",
+        "description": "Karriärutveckling från utvecklare till IT-konsult och företagsägare"
+    },
+    "resume": {
+        "title": "CV",
+        "description": "Utskrivbar version optimerad för rekrytering (2 sidor)",
+        "print_button": "Skriv ut / Spara PDF (2 sidor)",
+        "summary_title": "Professionell Sammanfattning",
+        "summary_text": "Erfaren IT-konsult och Python-utvecklare med 15+ års erfarenhet av ERP/CRM-implementering och affärsautomatisering. För närvarande utvecklar jag AI-integrerade lösningar för internationella juridiska tjänster samtidigt som jag hanterar olika frilansprojekt. Dokumenterad förmåga att leda utvecklingsteam, implementera komplexa system över flera butiker och att vara medägare i ett framgångsrikt IT-konsultföretag. Flytande i ryska, engelska och svenska.",
+        "skills_title": "Kärnkompetenser",
+        "skills_ai": "Programmering & AI",
+        "skills_ai_list": "Python, TensorFlow, scikit-learn, pandas, NumPy, FastAPI, Maskininlärning",
+        "skills_db": "Databaser & BI",
+        "skills_db_list": "MS SQL Server, Oracle, T-SQL, PostgreSQL, Power BI, OLAP, Dataanalys",
+        "skills_erp": "ERP & CRM",
+        "skills_erp_list": "Bitrix24, PlanFix, SAP Integration, 1C:Enterprise, WMS/TMS-system",
+        "skills_web": "Webb & Marknadsföring",
+        "skills_web_list": "WordPress, PHP, JavaScript, SEO, Google Ads, Digital Marknadsföring",
+        "experience_title": "Professionell Erfarenhet",
+        "education_title": "Utbildning & Certifieringar",
+        "edu_cert_1_name": "Certifiering i Python-programmering och AI-utveckling",
+        "edu_cert_1_desc": "NBI/Academy of Commerce, Sverige (2025)",
+        "edu_degree_name": "MS Systemingenjör - Processautomatisering",
+        "edu_degree_desc": "Minsk Radio Engineering Institute, Belarus (1992)",
+        "edu_cert_title": "Certifieringar",
+        "edu_cert_list": "Microsoft SQL Server 2005 Database Implementation & Maintenance, Bitrix24 CRM Expert, IBM Cognos BI 8.4, ERP System Implementation (ISACA)",
+        "projects_title": "Anmärkningsvärda Projekt",
+        "project_1_name": "AI Legal Workflow Automation",
+        "project_1_desc": "Python-baserat system som automatiserar dokumenthantering för internationella juridiska ärenden",
+        "project_2_name": "ERP-implementering i flera butiker",
+        "project_2_desc": "Omfattande systemutrullning på 26 butiker med SAP-integration",
+        "project_3_name": "PlanFix Påminnelsesystem",
+        "project_3_desc": "Automatiserad CRM-integration med WhatsApp-aviseringar (github.com/PtOlga/planfix_reminder)",
+        "project_4_name": "BI-analysplattform",
+        "project_4_desc": "Affärsintelligenslösning i realtid med Power BI och OLAP-teknologier",
+        "languages_title": "Språk",
+        "lang_ru": "Ryska",
+        "lang_ru_level": "Modersmål",
+        "lang_en": "Engelska",
+        "lang_en_level": "Professionell arbetsnivå",
+        "lang_sv": "Svenska",
+        "lang_sv_level": "Professionell arbetsnivå"
+    },
+    "contact": {
+        "title": "Kontakta Mig",
+        "description": "Öppen för nya möjligheter och intressanta projekt",
+        "email_title": "E-post",
+        "email": "5441700@gmail.com",
+        "phone_title": "Telefon",
+        "phone": "+46 737 686 471",
+        "linkedin_title": "LinkedIn",
+        "linkedin_link": "Anslut med mig",
+        "github_title": "GitHub",
+        "github_link": "Se min kod"
+    },
+    "cta": {
+        "title": "Redo att samarbeta?",
+        "description": "Jag är alltid intresserad av att diskutera nya projekt, kreativa idéer eller möjligheter att vara en del av era visioner.",
+        "email_button": "Skicka meddelande",
+        "schedule_button": "Boka möte"
+    },
+    "footer": {
+        "copyright": "&copy; 2025 Olga Petrovskaya. Byggd med passion och kod.",
+        "contact": "Kontakt",
+        "github": "GitHub"
+    }
+}

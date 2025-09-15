@@ -1,0 +1,120 @@
+{
+    "header": {
+        "name": "Olga Petrovskaya",
+        "subtitle": "Python AI Developer & ERP/CRM Consultant",
+        "phone": "+46 737 686 471",
+        "email": "5441700@gmail.com",
+        "location": "Charlottenberg, Sweden",
+        "linkedin": "LinkedIn",
+        "github": "GitHub",
+        "phone_full": "+46 737 686 471",
+        "email_full": "5441700@gmail.com",
+        "linkedin_full": "linkedin.com/in/olga-petrovskaya",
+        "github_full": "github.com/PtOlga"
+    },
+    "nav": {
+        "about": "About",
+        "projects": "Projects",
+        "skills": "Skills",
+        "experience": "Experience",
+        "resume": "Resume",
+        "contact": "Contact"
+    },
+    "about": {
+        "title": "About Me",
+        "description": "Python AI Developer & ERP/CRM Consultant with 15+ years experience in business automation and system implementation. Currently developing AI-integrated solutions for international legal services while freelancing on diverse IT projects. Based in Sweden, working with clients globally.",
+        "stats_years": "Years Experience",
+        "stats_projects": "Projects Completed",
+        "stats_stores": "Retail Stores Automated",
+        "stats_languages": "Languages"
+    },
+    "projects": {
+        "title": "Featured Projects",
+        "description": "A selection of my recent work spanning AI automation, ERP implementation, and web development",
+        "filter_all": "All Projects",
+        "filter_ai": "AI & Automation",
+        "filter_erp": "ERP/CRM",
+        "filter_web": "Web Development",
+        "live_demo": "Live Demo",
+        "source_code": "Source Code"
+    },
+    "github": {
+        "title": "Latest GitHub Activity",
+        "recent_repos": "Recent Repositories",
+        "stats_title": "GitHub Stats",
+        "public_repos": "Public Repositories:",
+        "most_used_lang": "Most Used Language:",
+        "github_since": "GitHub Since:"
+    },
+    "skills": {
+        "title": "Technical Skills",
+        "description": "Technologies and tools I work with regularly"
+    },
+    "experience": {
+        "title": "Professional Experience",
+        "description": "Career progression from developer to IT consultant and business owner"
+    },
+    "resume": {
+        "title": "Resume",
+        "description": "Printable version optimized for recruitment (2 pages)",
+        "print_button": "Print / Save PDF (2 pages)",
+        "summary_title": "Professional Summary",
+        "summary_text": "Experienced IT Consultant and Python Developer with 15+ years in ERP/CRM implementation and business automation. Currently developing AI-integrated solutions for international legal services while managing diverse freelance projects. Proven track record of leading development teams, implementing complex systems across multiple retail locations, and co-owning a successful IT consultancy. Fluent in Russian, English, and Swedish.",
+        "skills_title": "Core Competencies",
+        "skills_ai": "Programming & AI",
+        "skills_ai_list": "Python, TensorFlow, scikit-learn, pandas, NumPy, FastAPI, Machine Learning",
+        "skills_db": "Databases & BI",
+        "skills_db_list": "MS SQL Server, Oracle, T-SQL, PostgreSQL, Power BI, OLAP, Data Analytics",
+        "skills_erp": "ERP & CRM",
+        "skills_erp_list": "Bitrix24, PlanFix, SAP Integration, 1C:Enterprise, WMS/TMS Systems",
+        "skills_web": "Web & Marketing",
+        "skills_web_list": "WordPress, PHP, JavaScript, SEO, Google Ads, Digital Marketing",
+        "experience_title": "Professional Experience",
+        "education_title": "Education & Certifications",
+        "edu_cert_1_name": "Python Programming and AI Development Certification",
+        "edu_cert_1_desc": "NBI/Academy of Commerce, Sweden (2025)",
+        "edu_degree_name": "MS Systems Engineer - Process Automation",
+        "edu_degree_desc": "Minsk Radio Engineering Institute, Belarus (1992)",
+        "edu_cert_title": "Certifications",
+        "edu_cert_list": "Microsoft SQL Server 2005 Database Implementation & Maintenance, Bitrix24 CRM Expert, IBM Cognos BI 8.4, ERP System Implementation (ISACA)",
+        "projects_title": "Notable Projects",
+        "project_1_name": "AI Legal Workflow Automation",
+        "project_1_desc": "Python-based system automating document processing for international legal cases",
+        "project_2_name": "Multi-Store ERP Implementation",
+        "project_2_desc": "Comprehensive system deployment across 26 retail locations with SAP integration",
+        "project_3_name": "PlanFix Reminder System",
+        "project_3_desc": "Automated CRM integration with WhatsApp notifications (github.com/PtOlga/planfix_reminder)",
+        "project_4_name": "BI Analytics Platform",
+        "project_4_desc": "Real-time business intelligence solution using Power BI and OLAP technologies",
+        "languages_title": "Languages",
+        "lang_ru": "Russian",
+        "lang_ru_level": "Native",
+        "lang_en": "English",
+        "lang_en_level": "Professional Working Proficiency",
+        "lang_sv": "Swedish",
+        "lang_sv_level": "Professional Working Proficiency"
+    },
+    "contact": {
+        "title": "Get In Touch",
+        "description": "Open to new opportunities and interesting projects",
+        "email_title": "Email",
+        "email": "5441700@gmail.com",
+        "phone_title": "Phone",
+        "phone": "+46 737 686 471",
+        "linkedin_title": "LinkedIn",
+        "linkedin_link": "Connect with me",
+        "github_title": "GitHub",
+        "github_link": "View my code"
+    },
+    "cta": {
+        "title": "Ready to collaborate?",
+        "description": "I'm always interested in discussing new projects, creative ideas, or opportunities to be part of your visions.",
+        "email_button": "Send Message",
+        "schedule_button": "Schedule Meeting"
+    },
+    "footer": {
+        "copyright": "&copy; 2025 Olga Petrovskaya. Built with passion and code.",
+        "contact": "Contact",
+        "github": "GitHub"
+    }
+}
