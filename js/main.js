@@ -202,8 +202,6 @@ async function renderResume() {
             ${experienceHtml}
         </div>
 
-        <div class="page-break"></div>
-
         <div class="resume-section">
             <h3>${translations.resume.education_title}</h3>
             <div class="education-item">
