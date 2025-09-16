@@ -297,7 +297,12 @@ li { margin-bottom: 0.5rem; color: var(--text-gray); }
 .section-title p {
     font-size: 1.125rem;
     color: var(--text-gray);
-    line-height: 1.8;
+    line-height: 1.6;
+}
+
+.section-title p br {
+    display: block;
+    margin-top: 0.5rem;
 }
 
 /* ===== STATS GRID ===== */
@@ -1381,4 +1386,12 @@ li { margin-bottom: 0.5rem; color: var(--text-gray); }
     grid-template-columns: 1fr 1fr;
     gap: 8pt;
     margin-bottom: 6pt;
+}
+
+#about .section-title {
+    margin-bottom: 1.5rem;
+}
+
+#about {
+    padding-bottom: 2rem;
 }
