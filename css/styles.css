@@ -261,7 +261,7 @@ li { margin-bottom: 0.5rem; color: var(--text-gray); }
 
 /* ===== SECTIONS ===== */
 .section {
-    padding: 3rem 0;
+    padding: 3rem 0 2rem 0;
 }
 
 .section:nth-child(even) {
@@ -1393,7 +1393,7 @@ li { margin-bottom: 0.5rem; color: var(--text-gray); }
 }
 
 #about {
-    padding-bottom: 1rem;
+    padding-bottom: 0.5rem;
 }
 
 #about .section-title {
