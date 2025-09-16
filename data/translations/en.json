@@ -22,11 +22,7 @@
     },
     "about": {
         "title": "About Me",
-        "description": "IT Consultant with 15+ years experience in business automation and system implementation. Currently webmaster and Python developer creating AI-integrated solutions. Expert in business analysis, process optimization, and problem-solving through automation. Continuously learning and testing new technologies. Skilled at managing and overseeing developer tasks or developing independently using AI tools. Based in Sweden, prefer remote work.",
-        "stats_years": "Years Experience",
-        "stats_projects": "Projects Completed",
-        "stats_stores": "Retail Stores Automated",
-        "stats_languages": "Languages"
+        "description": "IT Consultant with 15+ years experience in business automation and system implementation. Currently webmaster and Python developer creating AI-integrated solutions. Expert in business analysis, process optimization, and problem-solving through automation. Continuously learning and testing new technologies. Skilled at managing and overseeing developer tasks or developing independently using AI tools.<br>Based in Sweden, prefer remote work."
     },
     "projects": {
         "title": "Featured Projects",
