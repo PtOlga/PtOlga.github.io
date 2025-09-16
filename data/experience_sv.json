@@ -1,0 +1,45 @@
+[
+    {
+        "date": "2022 - Nuvarande",
+        "title": "IT-konsult",
+        "company": "Legal Status UAB - Internationell",
+        "responsibilities": [
+            "Utveckling, marknadsföring och administration av företagswebbplatser",
+            "Skapade AI-chatbot för juridisk rådgivning med testning av flera LLM:er (Llama 2, Zephyr 7B, Mistral 7B) och RAG-teknologi med LangChain",
+            "Utvecklade Python-applikation med PlanFix CRM API-integration för uppgiftsnotifiering och spårningssystem med modulär arkitektur",
+            "Utvecklar automatiserat batchbearbetningssystem för dokument i Python med Mega-molnintegration och GitHub Actions för arbetsflödesoptimering och minskning av manuellt arbete"
+        ]
+    },
+    {
+        "date": "2020 - Nuvarande",
+        "title": "Frilansande IT-specialist",
+        "company": "Distansarbete - Sverige",
+        "responsibilities": [
+            "Levererade webbutvecklings- och automationsprojekt",
+            "Specialiserad på Python-automation och API-integrationer",
+            "Tillhandahöll SEO och digitala marknadsföringstjänster"
+        ]
+    },
+    {
+        "date": "2016 - 2020",
+        "title": "Direktör och medägare",
+        "company": "IT-företag \"Solutions of the Future\" - Minsk, BY",
+        "responsibilities": [
+            "Projekt- och teamledning som spelande coach i ERP-mjukvaruutvecklingsprocesser",
+            "Ledde team med 8 utvecklare och 3 affärsanalytiker",
+            "Underhåll av företagswebbplats och Google-baserad marknadsföring och SEO-optimering med CRM Bitrix-plattform",
+            "BI-analys och rapportering med OLAP och Power BI för distributions- och detaljhandelssektorer"
+        ]
+    },
+    {
+        "date": "2011 - 2016",
+        "title": "Chef för mjukvaruutveckling",
+        "company": "\"Armtek\" Group - Minsk, BY",
+        "responsibilities": [
+            "Ledde utvecklingsteam med 12 personer med Agile/ITIL-metoder",
+            "ERP-systemimplementering över 26 detaljhandelsplatser med SAP-integration",
+            "WMS- och TMS-systemutrullning för lager- och transporthantering",
+            "Mjukvaruarkitekturdesign och teknisk projektledning"
+        ]
+    }
+]

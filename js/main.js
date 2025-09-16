@@ -4,7 +4,8 @@ const DATA_URLS = {
     sv: 'data/translations/sv.json',
     projects: 'data/projects.json',
     skills: 'data/skills.json',
-    experience: 'data/experience.json'
+    experience_en: 'data/experience.json',
+    experience_sv: 'data/experience_sv.json'
 };
 
 const CACHE = {};
