@@ -581,20 +581,31 @@ li { margin-bottom: 0.5rem; color: var(--text-gray); }
 /* ===== SKILLS GRID ===== */
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
     margin-top: 3rem;
+}
+
+@media (max-width: 1200px) {
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 .skill-category {
     background: var(--white);
-    padding: 2rem;
-    border-radius: 1.5rem;
-    box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
-    transition: all 0.3s;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
     border: 1px solid var(--border-gray);
-    position: relative;
-    overflow: hidden;
+    transition: all 0.15s;
+    min-width: 220px;
 }
 
 .skill-category::before {
