@@ -684,7 +684,7 @@ li { margin-bottom: 0.5rem; color: var(--text-gray); }
 /* ===== TIMELINE ===== */
 .timeline {
     position: relative;
-    max-width: 900px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 2rem 0;
 }
@@ -704,7 +704,7 @@ li { margin-bottom: 0.5rem; color: var(--text-gray); }
 .timeline-item {
     position: relative;
     margin-bottom: 3rem;
-    width: calc(50% - 2rem);
+    width: calc(50% - 3rem);
 }
 
 .timeline-item::before {
@@ -739,7 +739,7 @@ li { margin-bottom: 0.5rem; color: var(--text-gray); }
 
 .timeline-content {
     background: var(--white);
-    padding: 2rem;
+    padding: 2.5rem;
     border-radius: 1rem;
     box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
     position: relative;
