@@ -261,20 +261,16 @@ li { margin-bottom: 0.5rem; color: var(--text-gray); }
 
 /* ===== SECTIONS ===== */
 .section {
-    padding: 5rem 0;
+    padding: 3rem 0;
 }
 
 .section:nth-child(even) {
     background: var(--light-gray);
 }
 
-.featured-section {
-    background: var(--off-white);
-}
-
 .section-title {
     text-align: center;
-    margin-bottom: 4rem;
+    margin-bottom: 2.5rem;
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;

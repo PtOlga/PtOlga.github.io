@@ -39,7 +39,6 @@ async function setLanguage(lang) {
     });
 
     // Re-render dynamic sections with new translations
-    renderProjects();
     renderSkills();
     renderExperience();
     renderResume();
