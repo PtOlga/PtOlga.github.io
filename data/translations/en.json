@@ -104,9 +104,7 @@
     },
     "cta": {
         "title": "Ready to collaborate?",
-        "description": "I'm always interested in discussing new projects, creative ideas, or opportunities to be part of your visions.",
-        "email_button": "Send Message",
-        "schedule_button": "Schedule Meeting"
+        "description": "I'm always interested in discussing new projects, creative ideas, or opportunities to be part of your visions."
     },
     "footer": {
         "copyright": "&copy; 2025 Olga Petrovskaya. Built with passion and code.",
