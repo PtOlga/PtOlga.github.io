@@ -80,7 +80,9 @@ async function renderSkills() {
 }
 
 async function renderExperience() {
-    const experienceData = await fetchData(DATA_URLS.experience);
+    const currentLang = document.querySelector('.language-btn.active').getAttribute('data-lang');
+    const experienceUrl = currentLang === 'sv' ? DATA_URLS.experience_sv : DATA_URLS.experience_en;
+    const experienceData = await fetchData(experienceUrl);
     const container = document.getElementById('experience-timeline-container');
     
     container.innerHTML = experienceData.map(item => `
