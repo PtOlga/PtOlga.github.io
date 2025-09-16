@@ -63,49 +63,6 @@ async function renderStats() {
     `).join('');
 }
 
-async function renderProjects() {
-    const projectsData = await fetchData(DATA_URLS.projects);
-    const container = document.getElementById('projects-grid-container');
-    const translations = await fetchData(DATA_URLS[document.querySelector('.language-btn.active').getAttribute('data-lang')]);
-
-    const filterBtns = document.querySelectorAll('.filter-btn');
-    filterBtns.forEach(btn => {
-        btn.onclick = () => {
-            const filter = btn.getAttribute('data-filter');
-            filterBtns.forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
-            
-            const filteredProjects = projectsData.filter(p => filter === 'all' || p.category === filter);
-            container.innerHTML = filteredProjects.map(project => `
-                <div class="project-card">
-                    <div class="project-image">
-                        <i class="${project.icon}"></i>
-                    </div>
-                    <div class="project-content">
-                        <div class="project-header">
-                            <h3>${project.title}</h3>
-                            <div class="project-links">
-                                ${project.links.demo ? `<a href="${project.links.demo}" class="project-link" title="${translations.projects.live_demo}" target="_blank"><i class="fas fa-external-link-alt"></i></a>` : ''}
-                                ${project.links.github ? `<a href="${project.links.github}" class="project-link" title="${translations.projects.source_code}" target="_blank"><i class="fab fa-github"></i></a>` : ''}
-                            </div>
-                        </div>
-                        <p>${project.description}</p>
-                        <div class="project-features">
-                            ${project.features.map(tag => `<span class="feature-tag">${tag}</span>`).join('')}
-                        </div>
-                        <div class="project-tech">
-                            ${project.tech.map(tag => `<span class="tech-tag">${tag}</span>`).join('')}
-                        </div>
-                    </div>
-                </div>
-            `).join('');
-        };
-    });
-    
-    // Initial render
-    document.querySelector('.filter-btn.active').click();
-}
-
 async function renderSkills() {
     const skillsData = await fetchData(DATA_URLS.skills);
     const container = document.getElementById('skills-grid-container');
