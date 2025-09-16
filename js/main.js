@@ -4,7 +4,7 @@ const DATA_URLS = {
     sv: 'data/translations/sv.json',
     projects: 'data/projects.json',
     skills: 'data/skills.json',
-    experience: 'data/experience.json',
+    experience_en: 'data/experience.json',
     experience_sv: 'data/experience_sv.json'
 };
 
@@ -80,7 +80,9 @@ async function renderSkills() {
 }
 
 async function renderExperience() {
-    const experienceData = await fetchData(DATA_URLS.experience);
+    const currentLang = document.querySelector('.language-btn.active').getAttribute('data-lang');
+    const experienceUrl = currentLang === 'sv' ? DATA_URLS.experience_sv : DATA_URLS.experience_en;
+    const experienceData = await fetchData(experienceUrl);
     const container = document.getElementById('experience-timeline-container');
     
     container.innerHTML = experienceData.map(item => `
@@ -98,8 +100,10 @@ async function renderExperience() {
 }
 
 async function renderResume() {
-    const translations = await fetchData(DATA_URLS[document.querySelector('.language-btn.active').getAttribute('data-lang')]);
-    const experienceData = await fetchData(DATA_URLS.experience);
+    const currentLang = document.querySelector('.language-btn.active').getAttribute('data-lang');
+    const translations = await fetchData(DATA_URLS[currentLang]);
+    const experienceUrl = currentLang === 'sv' ? DATA_URLS.experience_sv : DATA_URLS.experience_en;
+    const experienceData = await fetchData(experienceUrl);
 
     const experienceHtml = experienceData.map(item => `
         <div class="resume-job">
