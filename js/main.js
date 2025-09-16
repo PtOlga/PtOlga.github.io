@@ -100,8 +100,10 @@ async function renderExperience() {
 }
 
 async function renderResume() {
-    const translations = await fetchData(DATA_URLS[document.querySelector('.language-btn.active').getAttribute('data-lang')]);
-    const experienceData = await fetchData(DATA_URLS.experience);
+    const currentLang = document.querySelector('.language-btn.active').getAttribute('data-lang');
+    const translations = await fetchData(DATA_URLS[currentLang]);
+    const experienceUrl = currentLang === 'sv' ? DATA_URLS.experience_sv : DATA_URLS.experience_en;
+    const experienceData = await fetchData(experienceUrl);
 
     const experienceHtml = experienceData.map(item => `
         <div class="resume-job">
@@ -116,7 +118,6 @@ async function renderResume() {
         </div>
     `).join('');
 
-    // This is a simplified example. For full resume, you would need to build out all sections similarly.
     const resumeHtml = `
         <div class="resume-header">
             <div class="resume-info">
