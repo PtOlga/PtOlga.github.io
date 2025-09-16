@@ -9,8 +9,7 @@
             { "name": "scikit-learn", "level": "advanced" },
             { "name": "pandas", "level": "expert" },
             { "name": "NumPy", "level": "advanced" },
-            { "name": "FastAPI", "level": "intermediate" },
-            { "name": "API Development", "level": "advanced" }
+            { "name": "API integration", "level": "intermediate" }
         ]
     },
     {
@@ -21,9 +20,8 @@
             { "name": "MS SQL Server", "level": "expert" },
             { "name": "Oracle", "level": "advanced" },
             { "name": "T-SQL", "level": "expert" },
-            { "name": "PostgreSQL", "level": "advanced" },
             { "name": "Power BI", "level": "advanced" },
-            { "name": "OLAP", "level": "expert" }
+            { "name": "OLAP", "level": "advanced" }
         ]
     },
     {
@@ -33,8 +31,6 @@
         "items": [
             { "name": "Bitrix24", "level": "expert" },
             { "name": "PlanFix", "level": "expert" },
-            { "name": "SAP Integration", "level": "advanced" },
-            { "name": "1C:Enterprise", "level": "expert" },
             { "name": "WMS/TMS", "level": "advanced" },
             { "name": "Business Process", "level": "expert" }
         ]
