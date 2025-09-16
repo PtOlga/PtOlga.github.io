@@ -1,10 +1,10 @@
 {
     "header": {
         "name": "Olga Petrovskaya",
-        "subtitle": "Python AI Developer & ERP/CRM Consultant",
+        "subtitle": "Web Development | WordPress | Python + AI | API Integrations | SEO | Google Ads | SMM",
         "phone": "+46 737 686 471",
         "email": "5441700@gmail.com",
-        "location": "Charlottenberg, Sweden",
+        "location": "Charlottenberg, Sweden (remote)",
         "linkedin": "LinkedIn",
         "github": "GitHub",
         "phone_full": "+46 737 686 471",
@@ -22,7 +22,7 @@
     },
     "about": {
         "title": "About Me",
-        "description": "Python AI Developer & ERP/CRM Consultant with 15+ years experience in business automation and system implementation. Currently developing AI-integrated solutions for international legal services while freelancing on diverse IT projects. Based in Sweden, working with clients globally.",
+        "description": "IT Consultant with 15+ years experience in business automation and system implementation. Currently webmaster and Python-developing AI-integrated solutions for international legal services while freelancing on diverse IT projects. Based in Sweden, working with clients globally.",
         "stats_years": "Years Experience",
         "stats_projects": "Projects Completed",
         "stats_stores": "Retail Stores Automated",
