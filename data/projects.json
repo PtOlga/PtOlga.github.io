@@ -1,7 +1,7 @@
 [
     {
         "id": "project-ai-legal",
-        "category": "ai",
+        "category": ["ai"],
         "icon": "fas fa-robot",
         "title": "AI Legal Workflow Automation",
         "description": "Python-based AI system for Legal Status UAB automating document processing and workflow management for international legal cases. Reduced processing time by 70%.",
@@ -27,7 +27,7 @@
     },
     {
         "id": "project-legal-site",
-        "category": "web",
+        "category": ["web"],
         "icon": "fas fa-balance-scale",
         "title": "Legal Status Website",
         "description": "Corporate website for international legal services with multi-language support, client portal integration, and automated lead management system.",
@@ -40,7 +40,7 @@
     },
     {
         "id": "project-portfolio",
-        "category": "web",
+        "category": ["web"],
         "icon": "fas fa-laptop-code",
         "title": "Portfolio Website",
         "description": "Modern, responsive portfolio website showcasing projects and professional experience. Built with vanilla HTML, CSS, and JavaScript for optimal performance.",
