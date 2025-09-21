@@ -90,9 +90,9 @@ async function renderProjects() {
 
     container.innerHTML = projectsData.map(project => {
         const categoryLabels = {
-            'ai': translations.projects?.filter_ai || 'AI & Automation',
-            'erp': translations.projects?.filter_erp || 'ERP/CRM', 
-            'web': translations.projects?.filter_web || 'Web Development'
+            'ai': (translations.projects && translations.projects.filter_ai) || 'AI & Automation',
+            'erp': (translations.projects && translations.projects.filter_erp) || 'ERP/CRM', 
+            'web': (translations.projects && translations.projects.filter_web) || 'Web Development'
         };
 
         return `
@@ -121,13 +121,13 @@ async function renderProjects() {
                     ${project.links.demo ? `
                         <a href="${project.links.demo}" class="project-link primary" target="_blank">
                             <i class="fas fa-external-link-alt"></i>
-                            ${translations.projects?.live_demo || 'Live Demo'}
+                            ${(translations.projects && translations.projects.live_demo) || 'Live Demo'}
                         </a>
                     ` : ''}
                     ${project.links.github ? `
                         <a href="${project.links.github}" class="project-link secondary" target="_blank">
                             <i class="fab fa-github"></i>
-                            ${translations.projects?.source_code || 'Source Code'}
+                            ${(translations.projects && translations.projects.source_code) || 'Source Code'}
                         </a>
                     ` : ''}
                 </div>
@@ -190,54 +190,42 @@ async function renderResume() {
     const experienceData = await fetchData(experienceUrl);
 
     const experienceHtml = experienceData.map(item => `
-        <div class="resume-job">
+        <div class="job">
             <div class="job-header">
-                <h4>${item.title}</h4>
-                <span>${item.date}</span>
+                <div class="job-title">
+                    <h4>${item.title}</h4>
+                    <p class="company">${item.company}</p>
+                </div>
+                <div class="job-date">${item.date}</div>
             </div>
-            <div class="job-company">${item.company}</div>
             <ul>
-                ${item.responsibilities.map(resp => `<li>${resp}</li>`).join('')}
+                ${item.responsibilities.slice(0, 3).map(resp => `<li>${resp}</li>`).join('')}
             </ul>
         </div>
     `).join('');
 
-    // This is a simplified example. For full resume, you would need to build out all sections similarly.
     const resumeHtml = `
-        <div class="resume-header">
-            <div class="resume-info">
-                <h1>Olga Petrovskaya</h1>
-                <h2>${translations.header.subtitle}</h2>
-                <div class="resume-contact">
-                    <span><i class="fas fa-phone"></i> ${translations.header.phone_full}</span>
-                    <span><i class="fas fa-envelope"></i> ${translations.header.email_full}</span>
-                    <span><i class="fas fa-map-marker-alt"></i> ${translations.header.location}</span>
-                    <span><i class="fab fa-linkedin"></i> ${translations.header.linkedin_full}</span>
-                    <span><i class="fab fa-github"></i> ${translations.header.github_full}</span>
-                </div>
-            </div>
-        </div>
-
         <div class="resume-section">
             <h3>${translations.resume.summary_title}</h3>
             <p>${translations.resume.summary_text}</p>
         </div>
 
-        <div class="resume-section">
-            <h3>${translations.resume.skills_title}</h3>
-            <div class="resume-skills">
-                <div class="skill-column">
-                    <strong>${translations.resume.skills_ai}:</strong> ${translations.resume.skills_ai_list}
-                </div>
-                <div class="skill-column">
-                    <strong>${translations.resume.skills_db}:</strong> ${translations.resume.skills_db_list}
-                </div>
-                <div class="skill-column">
-                    <strong>${translations.resume.skills_erp}:</strong> ${translations.resume.skills_erp_list}
-                </div>
-                <div class="skill-column">
-                    <strong>${translations.resume.skills_web}:</strong> ${translations.resume.skills_web_list}
-                </div>
+        <div class="resume-skills">
+            <div class="skill-group">
+                <h4>${translations.resume.skills_ai}</h4>
+                <p>${translations.resume.skills_ai_list}</p>
+            </div>
+            <div class="skill-group">
+                <h4>${translations.resume.skills_db}</h4>
+                <p>${translations.resume.skills_db_list}</p>
+            </div>
+            <div class="skill-group">
+                <h4>${translations.resume.skills_erp}</h4>
+                <p>${translations.resume.skills_erp_list}</p>
+            </div>
+            <div class="skill-group">
+                <h4>${translations.resume.skills_web}</h4>
+                <p>${translations.resume.skills_web_list}</p>
             </div>
         </div>
 
