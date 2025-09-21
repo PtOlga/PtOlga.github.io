@@ -95,15 +95,20 @@ async function renderProjects() {
             'web': (translations.projects && translations.projects.filter_web) || 'Web Development'
         };
 
+        // Handle single category or array of categories
+        const categories = Array.isArray(project.category) ? project.category : [project.category];
+        const categoryString = categories.join(' ');
+        const displayCategory = categoryLabels[categories[0]] || categories[0];
+
         return `
-            <div class="project-card" data-category="${project.category}">
+            <div class="project-card" data-category="${categoryString}">
                 <div class="project-header">
                     <div class="project-icon">
                         <i class="${project.icon}"></i>
                     </div>
                     <div class="project-info">
                         <h3>${project.title}</h3>
-                        <span class="project-category">${categoryLabels[project.category] || project.category}</span>
+                        <span class="project-category">${displayCategory}</span>
                     </div>
                 </div>
                 
@@ -153,8 +158,8 @@ function initProjectFiltering() {
             
             // Filter projects
             projectCards.forEach(card => {
-                if (category === 'all' || 
-                    (Array.isArray(project.category) ? project.category.includes(category) : project.category === category)) {
+                const cardCategories = card.getAttribute('data-category');
+                if (category === 'all' || cardCategories.includes(category)) {
                     card.classList.remove('hidden');
                 } else {
                     card.classList.add('hidden');
