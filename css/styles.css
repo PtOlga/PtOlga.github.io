@@ -1049,7 +1049,10 @@ li { margin-bottom: 0.5rem; color: var(--text-gray); }
         break-before: page;
     }
 
-    @page { margin: 1.5cm; size: A4; }
+    @page {
+        margin: 20mm 15mm 20mm 15mm;
+        size: A4;
+    }
     
     .no-print { display: none !important; }
     

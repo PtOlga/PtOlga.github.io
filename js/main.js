@@ -211,6 +211,20 @@ async function renderResume() {
     `).join('');
 
     const resumeHtml = `
+        <div class="resume-header">
+            <div class="resume-info">
+                <h1>Olga Petrovskaya</h1>
+                <h2>Python AI Developer & ERP/CRM Consultant</h2>
+                <div class="resume-contact">
+                    <span><i class="fas fa-phone"></i> +46 737 686 471</span>
+                    <span><i class="fas fa-envelope"></i> 5441700@gmail.com</span>
+                    <span><i class="fas fa-map-marker-alt"></i> Charlottenberg, Sweden</span>
+                    <span><i class="fab fa-linkedin"></i> linkedin.com/in/olga-petrovskaya</span>
+                    <span><i class="fab fa-github"></i> github.com/PtOlga</span>
+                </div>
+            </div>
+        </div>
+
         <div class="resume-section">
             <h3>${translations.resume.summary_title}</h3>
             <p>${translations.resume.summary_text}</p>
