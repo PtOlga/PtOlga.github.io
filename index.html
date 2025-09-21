@@ -55,8 +55,9 @@
         <div class="container">
             <div class="nav-container">
                 <a href="#about" class="nav-link active" data-i18n="nav.about"></a>
-                <a href="#skills" class="nav-link" data-i18n="nav.skills"></a>
+                <a href="#projects" class="nav-link" data-i18n="nav.projects"></a>
                 <a href="#experience" class="nav-link" data-i18n="nav.experience"></a>
+                <a href="#skills" class="nav-link" data-i18n="nav.skills"></a>
                 <a href="#resume" class="nav-link" data-i18n="nav.resume"></a>
                 <a href="#contact" class="nav-link" data-i18n="nav.contact"></a>
             </div>
@@ -68,6 +69,25 @@
             <div class="section-title">
                 <h2 data-i18n="about.title">About Me</h2>
                 <p data-i18n="about.description">IT Consultant with 15+ years experience in business automation and system implementation. Currently webmaster and Python developer creating AI-integrated solutions. Expert in business analysis, process optimization, and problem-solving through automation. Continuously learning and testing new technologies. Skilled at managing and overseeing developer tasks or developing independently using AI tools.<br>Based in Sweden, prefer remote work.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-i18n="projects.title">Featured Projects</h2>
+                <p data-i18n="projects.description">A selection of my recent work spanning AI automation, ERP implementation, and web development</p>
+            </div>
+
+            <div class="projects-filter no-print">
+                <button class="filter-btn active" data-category="all" data-i18n="projects.filter_all">All Projects</button>
+                <button class="filter-btn" data-category="ai" data-i18n="projects.filter_ai">AI & Automation</button>
+                <button class="filter-btn" data-category="erp" data-i18n="projects.filter_erp">ERP/CRM</button>
+                <button class="filter-btn" data-category="web" data-i18n="projects.filter_web">Web Development</button>
+            </div>
+
+            <div class="projects-grid" id="projects-grid-container">
             </div>
         </div>
     </section>

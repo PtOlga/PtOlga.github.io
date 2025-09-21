@@ -1,0 +1,80 @@
+[
+    {
+        "id": "project-ai-legal",
+        "category": "ai",
+        "icon": "fas fa-robot",
+        "title": "AI Legal Workflow Automation",
+        "description": "Python-baserat AI-system för Legal Status UAB som automatiserar dokumentbehandling och arbetsflödeshantering för internationella juridiska ärenden. Minskade handläggningstiden med 70%.",
+        "features": ["Dokument AI", "Arbetsflödesautomation", "Flerspråksstöd"],
+        "tech": ["Python", "TensorFlow", "FastAPI", "PostgreSQL"],
+        "links": {
+            "demo": "#",
+            "github": "#"
+        }
+    },
+    {
+        "id": "project-planfix-reminder",
+        "category": "ai",
+        "icon": "fas fa-bell",
+        "title": "PlanFix Påminnelsesystem",
+        "description": "Automatiserat påminnelsesystem som integrerar med PlanFix CRM för att skicka WhatsApp-notifieringar för försenade uppgifter och kommande deadlines. Förbättrade teamproduktiviteten med 45%.",
+        "features": ["CRM-integration", "WhatsApp API", "Uppgiftsautomation"],
+        "tech": ["Python", "PlanFix API", "WhatsApp Business", "Scheduler"],
+        "links": {
+            "demo": null,
+            "github": "https://github.com/PtOlga/planfix_reminder"
+        }
+    },
+    {
+        "id": "project-erp",
+        "category": "erp",
+        "icon": "fas fa-store",
+        "title": "Flerstörs ERP-implementering",
+        "description": "Ledde omfattande ERP-systemimplementering över 26 butiksplatser för Armtek Group, integrering av lager, försäljning och ekonomihantering med realtidsanalys.",
+        "features": ["Flera platser", "Realtidssynkronisering", "Ekonomisk integration"],
+        "tech": ["SAP", "WMS", "TMS", "1C:Enterprise"],
+        "links": {
+            "demo": null,
+            "github": null
+        }
+    },
+    {
+        "id": "project-bi",
+        "category": "erp",
+        "icon": "fas fa-chart-line",
+        "title": "BI Analytics-plattform",
+        "description": "Byggde omfattande business intelligence-plattform med OLAP Cube och Power BI för detaljhandels- och distributionsanalys, med realtidsinsikter och automatiserad rapportering.",
+        "features": ["Realtidsdashboards", "Automatiserade rapporter", "KPI-spårning"],
+        "tech": ["Power BI", "OLAP", "SQL Server", "Azure"],
+        "links": {
+            "demo": "#",
+            "github": null
+        }
+    },
+    {
+        "id": "project-legal-site",
+        "category": "web",
+        "icon": "fas fa-balance-scale",
+        "title": "Legal Status Webbplats",
+        "description": "Företagswebbplats för internationella juridiska tjänster med flerspråksstöd, klientportalintegration och automatiserat leadhanteringssystem.",
+        "features": ["Flerspråkig", "Klientportal", "Lead-automation"],
+        "tech": ["WordPress", "PHP", "JavaScript", "MySQL"],
+        "links": {
+            "demo": "https://status.law",
+            "github": null
+        }
+    },
+    {
+        "id": "project-portfolio",
+        "category": "web",
+        "icon": "fas fa-laptop-code",
+        "title": "Portfolio Webbplats",
+        "description": "Modern, responsiv portfolio-webbplats som visar projekt och professionell erfarenhet. Byggd med vanilla HTML, CSS och JavaScript för optimal prestanda.",
+        "features": ["Responsiv design", "Prestandaoptimerad", "SEO-vänlig"],
+        "tech": ["HTML5", "CSS3", "JavaScript", "GitHub Pages"],
+        "links": {
+            "demo": "https://ptolga.github.io",
+            "github": "https://github.com/PtOlga/PtOlga.github.io"
+        }
+    }
+]

@@ -2,7 +2,8 @@
 const DATA_URLS = {
     en: 'data/translations/en.json',
     sv: 'data/translations/sv.json',
-    projects: 'data/projects.json',
+    projects_en: 'data/projects.json',
+    projects_sv: 'data/projects_sv.json',
     skills: 'data/skills.json',
     experience_en: 'data/experience.json',
     experience_sv: 'data/experience_sv.json'
@@ -42,6 +43,7 @@ async function setLanguage(lang) {
     // Re-render dynamic sections with new translations
     renderSkills();
     renderExperience();
+    renderProjects();
     renderResume();
 }
 
@@ -77,6 +79,88 @@ async function renderSkills() {
             </div>
         </div>
     `).join('');
+}
+
+async function renderProjects() {
+    const currentLang = document.querySelector('.language-btn.active').getAttribute('data-lang');
+    const projectsUrl = currentLang === 'sv' ? DATA_URLS.projects_sv : DATA_URLS.projects_en;
+    const projectsData = await fetchData(projectsUrl);
+    const container = document.getElementById('projects-grid-container');
+    const translations = await fetchData(DATA_URLS[currentLang]);
+
+    container.innerHTML = projectsData.map(project => {
+        const categoryLabels = {
+            'ai': translations.projects?.filter_ai || 'AI & Automation',
+            'erp': translations.projects?.filter_erp || 'ERP/CRM', 
+            'web': translations.projects?.filter_web || 'Web Development'
+        };
+
+        return `
+            <div class="project-card" data-category="${project.category}">
+                <div class="project-header">
+                    <div class="project-icon">
+                        <i class="${project.icon}"></i>
+                    </div>
+                    <div class="project-info">
+                        <h3>${project.title}</h3>
+                        <span class="project-category">${categoryLabels[project.category] || project.category}</span>
+                    </div>
+                </div>
+                
+                <p class="project-description">${project.description}</p>
+                
+                <div class="project-features">
+                    ${project.features.map(feature => `<span class="feature-tag">${feature}</span>`).join('')}
+                </div>
+                
+                <div class="project-tech">
+                    ${project.tech.map(tech => `<span class="tech-tag">${tech}</span>`).join('')}
+                </div>
+                
+                <div class="project-links">
+                    ${project.links.demo ? `
+                        <a href="${project.links.demo}" class="project-link primary" target="_blank">
+                            <i class="fas fa-external-link-alt"></i>
+                            ${translations.projects?.live_demo || 'Live Demo'}
+                        </a>
+                    ` : ''}
+                    ${project.links.github ? `
+                        <a href="${project.links.github}" class="project-link secondary" target="_blank">
+                            <i class="fab fa-github"></i>
+                            ${translations.projects?.source_code || 'Source Code'}
+                        </a>
+                    ` : ''}
+                </div>
+            </div>
+        `;
+    }).join('');
+
+    // Initialize project filtering
+    initProjectFiltering();
+}
+
+function initProjectFiltering() {
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const projectCards = document.querySelectorAll('.project-card');
+
+    filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const category = button.getAttribute('data-category');
+            
+            // Update active button
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            button.classList.add('active');
+            
+            // Filter projects
+            projectCards.forEach(card => {
+                if (category === 'all' || card.getAttribute('data-category') === category) {
+                    card.classList.remove('hidden');
+                } else {
+                    card.classList.add('hidden');
+                }
+            });
+        });
+    });
 }
 
 async function renderExperience() {
@@ -203,6 +287,9 @@ async function renderResume() {
 document.addEventListener('DOMContentLoaded', () => {
     // Initial data load for English
     setLanguage('en');
+    
+    // Initialize projects section
+    renderProjects();
 
     // Language buttons
     document.querySelectorAll('.language-btn').forEach(btn => {
