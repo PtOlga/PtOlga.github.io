@@ -264,6 +264,10 @@ li { margin-bottom: 0.5rem; color: var(--text-gray); }
     padding: 5rem 0;
 }
 
+   #about {
+       padding-bottom: 2rem;
+   }
+
 .section:nth-child(even) {
     background: var(--light-gray);
 }
