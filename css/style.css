@@ -1489,7 +1489,7 @@ li { margin-bottom: 0.5rem; color: var(--text-gray); }
 .project-link.primary {
     background: var(--primary-green);
     color: var(--white);
-    min-width: 100px !important;
+    width: 100px !important;
     justify-content: center;
 }
 
