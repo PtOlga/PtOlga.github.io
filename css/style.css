@@ -265,7 +265,7 @@ li { margin-bottom: 0.5rem; color: var(--text-gray); }
 }
 
    #about {
-       padding-bottom: 2rem;
+       padding-bottom: 1rem;
    }
 
 .section:nth-child(even) {
