@@ -1,347 +1,188 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olga Petrovskaya - Portfolio</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="language-selector no-print">
+        <button class="language-btn active" data-lang="en">EN</button>
+        <button class="language-btn" data-lang="sv">SV</button>
+    </div>
 
-        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-        
-        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
-        
-        <link rel="stylesheet" href="assets/css/styles.css">
-
-        <title>Olga's Portfolio</title>
-    </head>
-    <body>
-        <header class="header" id="header">
-            <nav class="nav container">
-                <a href="#" class="nav__logo">Ольга</a>
-
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list grid">
-                        <li class="nav__item">
-                            <a href="#home" class="nav__link active-link">
-                                <i class="uil uil-estate nav__icon"></i> Главная
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#about" class="nav__link">
-                                <i class="uil uil-user nav__icon"></i> Обо мне
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#skills" class="nav__link">
-                                <i class="uil uil-file-alt nav__icon"></i> Навыки
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#portfolio" class="nav__link">
-                                <i class="uil uil-scenery nav__icon"></i> Портфолио
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#contact" class="nav__link">
-                                <i class="uil uil-message nav__icon"></i> Контакты
-                            </a>
-                        </li>
-                    </ul>
-                    <i class="uil uil-times nav__close" id="nav-close"></i>
-                </div>
-
-                <div class="nav__btns">
-                    <i class="uil uil-moon change-theme" id="theme-button"></i>
-
-                    <div class="nav__toggle" id="nav-toggle">
-                        <i class="uil uil-apps"></i>
-                    </div>
-                </div>
-            </nav>
-        </header>
-
-        <main class="main">
-            <section class="home section" id="home">
-                <div class="home__container container grid">
-                    <div class="home__content grid">
-                        <div class="home__social">
-                            <a href="https://www.linkedin.com/" target="_blank" class="home__social-icon">
-                                <i class="uil uil-linkedin-alt"></i>
-                            </a>
-
-                            <a href="https://dribbble.com/" target="_blank" class="home__social-icon">
-                                <i class="uil uil-dribbble"></i>
-                            </a>
-
-                            <a href="https://github.com/PtOlga" target="_blank" class="home__social-icon">
-                                <i class="uil uil-github-alt"></i>
-                            </a>
-                        </div>
-                        <div class="home__img">
-                            <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <mask id="mask0" mask-type="alpha">
-                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
-                                    130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
-                                    97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
-                                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
-                                </mask>
-                                <g mask="url(#mask0)">
-                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
-                                    130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
-                                    97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
-                                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
-                                    <image class="home__blob-img" x="12" y="18" xlink:href="assets/img/perfil.png"/>
-                                </g>
-                            </svg>
-                        </div>
-                        <div class="home__data">
-                            <h1 class="home__title">Привет, я Ольга</h1>
-                            <h3 class="home__subtitle">Frontend разработчик</h3>
-                            <p class="home__description">Начинающий специалист в области веб-разработки, обладаю хорошими знаниями и желанием создавать качественные проекты.</p>
-                            <a href="#contact" class="button button--flex">
-                                Связаться со мной <i class="uil uil-message button__icon"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="home__scroll">
-                        <a href="#about" class="home__scroll-button button--flex">
-                            <i class="uil uil-mouse-alt home__scroll-mouse"></i>
-                            <span class="home__scroll-name">Листайте вниз</span>
-                            <i class="uil uil-arrow-down home__scroll-arrow"></i>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <img src="img/profile.jpg" alt="Olga Petrovskaya" class="profile-photo">
+                <div class="header-text">
+                    <h1 data-i18n="header.name"></h1>
+                    <p class="subtitle" data-i18n="header.subtitle"></p>
+                    <div class="contact-info">
+                        <a href="tel:+46737686471" class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span data-i18n="header.phone"></span>
+                        </a>
+                        <a href="mailto:5441700@gmail.com" class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span data-i18n="header.email"></span>
+                        </a>
+                        <a href="#" class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span data-i18n="header.location"></span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/olga-petrovskaya" class="contact-item" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                            <span data-i18n="header.linkedin"></span>
+                        </a>
+                        <a href="https://github.com/PtOlga" class="contact-item" target="_blank">
+                            <i class="fab fa-github"></i>
+                            <span data-i18n="header.github"></span>
                         </a>
                     </div>
                 </div>
-            </section>
+            </div>
+        </div>
+    </header>
 
-            <section class="about section" id="about">
-                <h2 class="section__title">Обо мне</h2>
-                <span class="section__subtitle">Коротко о себе</span>
-                <div class="about__container container grid">
-                    <img src="assets/img/about.jpg" alt="" class="about__img">
-                    <div class="about__data">
-                        <p class="about__description">Веб-разработчик со знаниями и опытом работы в области веб-технологий, занимаюсь созданием и реализацией качественных проектов.</p>
-                        <div class="about__info">
-                            <div>
-                                <span class="about__info-title">01+</span>
-                                <span class="about__info-name">Год <br> опыта</span>
-                            </div>
-                            <div>
-                                <span class="about__info-title">05+</span>
-                                <span class="about__info-name">Выполненных <br> проектов</span>
-                            </div>
-                            <div>
-                                <span class="about__info-title">02+</span>
-                                <span class="about__info-name">Компании <br> в которых работала</span>
-                            </div>
-                        </div>
-                        <div class="about__buttons">
-                            <a download="" href="assets/pdf/Alexa-Cv.pdf" class="button button--flex">
-                                Скачать резюме <i class="uil uil-download-alt button__icon"></i>
-                            </a>
-                        </div>
-                    </div>
+    <nav class="nav no-print">
+        <div class="container">
+            <div class="nav-container">
+                <a href="#about" class="nav-link active" data-i18n="nav.about"></a>
+                <a href="#projects" class="nav-link" data-i18n="nav.projects"></a>
+                <a href="#experience" class="nav-link" data-i18n="nav.experience"></a>
+                <a href="#skills" class="nav-link" data-i18n="nav.skills"></a>
+                <a href="#resume" class="nav-link" data-i18n="nav.resume"></a>
+                <a href="#contact" class="nav-link" data-i18n="nav.contact"></a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-i18n="about.title">About Me</h2>
+                <p data-i18n="about.description">IT Consultant with 15+ years experience in business automation and system implementation. Currently webmaster and Python developer creating AI-integrated solutions. Expert in business analysis, process optimization, and problem-solving through automation. Continuously learning and testing new technologies. Skilled at managing and overseeing developer tasks or developing independently using AI tools.<br>Based in Sweden, prefer remote work.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-i18n="projects.title">Featured Projects</h2>
+                <p data-i18n="projects.description">A selection of my recent work spanning AI automation, ERP implementation, and web development</p>
+            </div>
+
+            <div class="projects-filter no-print">
+                <button class="filter-btn active" data-category="all" data-i18n="projects.filter_all">All Projects</button>
+                <button class="filter-btn" data-category="ai" data-i18n="projects.filter_ai">AI & Automation</button>
+                <button class="filter-btn" data-category="erp" data-i18n="projects.filter_erp">ERP/CRM</button>
+                <button class="filter-btn" data-category="web" data-i18n="projects.filter_web">Web Development</button>
+            </div>
+
+            <div class="projects-grid" id="projects-grid-container">
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-i18n="experience.title"></h2>
+                <p data-i18n="experience.description"></p>
+            </div>
+            <div class="timeline" id="experience-timeline-container">
                 </div>
-            </section>
+        </div>
+    </section>
 
-            <section class="skills section" id="skills">
-                <h2 class="section__title">Навыки</h2>
-                <span class="section__subtitle">Мой технический уровень</span>
-                <div class="skills__container container grid">
-                    <div>
-                        <div class="skills__content skills__open">
-                            <div class="skills__header">
-                                <i class="uil uil-brackets-curly skills__icon"></i>
-                                <div>
-                                    <h1 class="skills__title">Frontend разработчик</h1>
-                                    <span class="skills__subtitle">Больше чем 1 год</span>
-                                </div>
-                                <i class="uil uil-angle-down skills__arrow"></i>
-                            </div>
-                            <div class="skills__list grid">
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">HTML</h3>
-                                        <span class="skills__number">90%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__html"></span>
-                                    </div>
-                                </div>
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">CSS</h3>
-                                        <span class="skills__number">80%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__css"></span>
-                                    </div>
-                                </div>
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">JavaScript</h3>
-                                        <span class="skills__number">60%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__js"></span>
-                                    </div>
-                                </div>
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">React</h3>
-                                        <span class="skills__number">50%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__react"></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    <section id="skills" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-i18n="skills.title"></h2>
+                <p data-i18n="skills.description"></p>
+            </div>
+            <div class="skills-grid" id="skills-grid-container">
                 </div>
-            </section>
+        </div>
+    </section>
 
-            <section class="portfolio section" id="portfolio">
-                <h2 class="section__title">Портфолио</h2>
-                <span class="section__subtitle">Мои последние работы</span>
-
-                <div class="portfolio__filters">
-                    <span class="portfolio__item active-portfolio" data-filter="all">Все</span>
-                    <span class="portfolio__item" data-filter=".web">Веб-сайты</span>
-                    <span class="portfolio__item" data-filter=".app">Веб-приложения</span>
-                    <span class="portfolio__item" data-filter=".other">Другое</span>
+    <section id="resume" class="section resume-section">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-i18n="resume.title"></h2>
+                <p data-i18n="resume.description"></p>
+                <button class="btn-primary no-print" onclick="window.print()" style="margin-top: 1rem;">
+                    <i class="fas fa-print"></i> <span data-i18n="resume.print_button"></span>
+                </button>
+            </div>
+            
+            <div class="resume-content" id="resume-container">
                 </div>
+        </div>
+    </section>
 
-                <div class="portfolio__container container grid">
-                    <div class="portfolio__content grid web">
-                        <img src="assets/img/portfolio1.jpg" alt="" class="portfolio__img">
-                        <div class="portfolio__data">
-                            <h3 class="portfolio__title">Сайт-визитка</h3>
-                            <p class="portfolio__description">Многостраничный сайт-визитка туристического агенства.</p>
-                            <a href="https://ptolga.github.io/travel-agent-website/" target="_blank" class="button button--flex button--small portfolio__button">
-                                Посмотреть
-                                <i class="uil uil-arrow-right button__icon"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="portfolio__content grid web">
-                        <img src="assets/img/portfolio2.jpg" alt="" class="portfolio__img">
-                        <div class="portfolio__data">
-                            <h3 class="portfolio__title">Новостной сайт</h3>
-                            <p class="portfolio__description">Сайт для просмотра актуальных новостей.</p>
-                            <a href="https://ptolga.github.io/News-homepage/" target="_blank" class="button button--flex button--small portfolio__button">
-                                Посмотреть
-                                <i class="uil uil-arrow-right button__icon"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="portfolio__content grid app">
-                        <img src="assets/img/portfolio3.jpg" alt="" class="portfolio__img">
-                        <div class="portfolio__data">
-                            <h3 class="portfolio__title">ToDo List</h3>
-                            <p class="portfolio__description">Приложение для создания и отслеживания списка дел.</p>
-                            <a href="https://ptolga.github.io/ToDo-List/" target="_blank" class="button button--flex button--small portfolio__button">
-                                Посмотреть
-                                <i class="uil uil-arrow-right button__icon"></i>
-                            </a>
-                        </div>
-                    </div>
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-i18n="contact.title"></h2>
+                <p data-i18n="contact.description"></p>
+            </div>
+            <div class="contact-info-grid">
+                <div class="contact-card">
+                    <i class="fas fa-envelope"></i>
+                    <h4 data-i18n="contact.email_title"></h4>
+                    <a href="mailto:5441700@gmail.com" data-i18n="contact.email"></a>
                 </div>
-            </section>
-
-            <section class="contact section" id="contact">
-                <h2 class="section__title">Контакты</h2>
-                <span class="section__subtitle">Связаться со мной</span>
-                <div class="contact__container container grid">
-                    <div>
-                        <div class="contact__information">
-                            <i class="uil uil-phone contact__icon"></i>
-                            <div>
-                                <h3 class="contact__title">Позвоните мне</h3>
-                                <span class="contact__subtitle">8-999-999-99-99</span>
-                            </div>
-                        </div>
-                        <div class="contact__information">
-                            <i class="uil uil-envelope contact__icon"></i>
-                            <div>
-                                <h3 class="contact__title">Email</h3>
-                                <span class="contact__subtitle">olga@email.com</span>
-                            </div>
-                        </div>
-                        <div class="contact__information">
-                            <i class="uil uil-map-marker contact__icon"></i>
-                            <div>
-                                <h3 class="contact__title">Локация</h3>
-                                <span class="contact__subtitle">Россия - Москва</span>
-                            </div>
-                        </div>
-                    </div>
-                    <form action="" class="contact__form grid">
-                        <div class="contact__inputs grid">
-                            <div class="contact__content">
-                                <label for="" class="contact__label">Имя</label>
-                                <input type="text" class="contact__input">
-                            </div>
-                            <div class="contact__content">
-                                <label for="" class="contact__label">Email</label>
-                                <input type="email" class="contact__input">
-                            </div>
-                        </div>
-                        <div class="contact__content">
-                            <label for="" class="contact__label">Проект</label>
-                            <input type="text" class="contact__input">
-                        </div>
-                        <div class="contact__content">
-                            <label for="" class="contact__label">Сообщение</label>
-                            <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
-                        </div>
-                        <div>
-                            <a href="" class="button button--flex">
-                                Отправить сообщение
-                                <i class="uil uil-message button__icon"></i>
-                            </a>
-                        </div>
-                    </form>
+                <div class="contact-card">
+                    <i class="fas fa-phone"></i>
+                    <h4 data-i18n="contact.phone_title"></h4>
+                    <a href="tel:+46737686471" data-i18n="contact.phone"></a>
                 </div>
-            </section>
-        </main>
+                <div class="contact-card">
+                    <i class="fab fa-linkedin"></i>
+                    <h4 data-i18n="contact.linkedin_title"></h4>
+                    <a href="https://www.linkedin.com/in/olga-petrovskaya" target="_blank" data-i18n="contact.linkedin_link"></a>
+                </div>
+                <div class="contact-card">
+                    <i class="fab fa-github"></i>
+                    <h4 data-i18n="contact.github_title"></h4>
+                    <a href="https://github.com/PtOlga" target="_blank" data-i18n="contact.github_link"></a>
+                </div>
+            </div>
+            
+            <div class="cta-section">
+                <h3 data-i18n="cta.title">Ready to collaborate?</h3>
+                <p data-i18n="cta.description">I'm always interested in discussing new projects, creative ideas, or opportunities to be part of your visions.</p>
+            </div>
+        </div>
+    </section>
 
-        <footer class="footer">
-         <div class="footer__bg">
-             <div class="footer__container container grid">
-                 <div>
-                     <h1 class="footer__title">Ольга</h1>
-                     <span class="footer__subtitle">Frontend разработчик</span>
-                 </div>
-                 <ul class="footer__links">
-                    <li>
-                        <a href="#portfolio" class="footer__link">Портфолио</a>
-                    </li>
-                    <li>
-                        <a href="#contact" class="footer__link">Контакты</a>
-                    </li>
-                 </ul>
-                 <div class="footer__socials">
-                     <a href="https://www.facebook.com/" target="_blank" class="footer__social">
-                        <i class="uil uil-facebook-f"></i>
-                     </a>
-                     <a href="https://www.instagram.com/" target="_blank" class="footer__social">
-                        <i class="uil uil-instagram"></i>
-                     </a>
-                     <a href="https://twitter.com/" target="_blank" class="footer__social">
-                        <i class="uil uil-twitter-alt"></i>
-                     </a>
-                 </div>
-             </div>
-             <p class="footer__copy">&#169; PtOlga. Все права защищены</p>
-         </div>
-        </footer>
-        
-        <a href="#" class="scrollup" id="scroll-up">
-            <i class="uil uil-arrow-up scrollup__icon"></i>
-        </a>
+    <footer class="footer no-print">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p data-i18n="footer.copyright"></p>
+                </div>
+                <div class="footer-links">
+                    <a href="mailto:5441700@gmail.com" class="footer-link">
+                        <i class="fas fa-envelope"></i> <span data-i18n="footer.contact"></span>
+                    </a>
+                    <a href="https://github.com/PtOlga" class="footer-link" target="_blank">
+                        <i class="fab fa-github"></i> <span data-i18n="footer.github"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-        <script src="assets/js/swiper-bundle.min.js"></script>
-
-        <script src="assets/js/mixitup.min.js"></script>
-
-        <script src="assets/js/main.js"></script>
-    </body>
+    <script src="js/main.js"></script>
+</body>
 </html>
