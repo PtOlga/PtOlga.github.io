@@ -26,32 +26,6 @@
         }
     },
     {
-        "id": "project-erp",
-        "category": "erp",
-        "icon": "fas fa-store",
-        "title": "Flerstörs ERP-implementering",
-        "description": "Ledde omfattande ERP-systemimplementering över 26 butiksplatser för Armtek Group, integrering av lager, försäljning och ekonomihantering med realtidsanalys.",
-        "features": ["Flera platser", "Realtidssynkronisering", "Ekonomisk integration"],
-        "tech": ["SAP", "WMS", "TMS", "1C:Enterprise"],
-        "links": {
-            "demo": null,
-            "github": null
-        }
-    },
-    {
-        "id": "project-bi",
-        "category": "erp",
-        "icon": "fas fa-chart-line",
-        "title": "BI Analytics-plattform",
-        "description": "Byggde omfattande business intelligence-plattform med OLAP Cube och Power BI för detaljhandels- och distributionsanalys, med realtidsinsikter och automatiserad rapportering.",
-        "features": ["Realtidsdashboards", "Automatiserade rapporter", "KPI-spårning"],
-        "tech": ["Power BI", "OLAP", "SQL Server", "Azure"],
-        "links": {
-            "demo": "#",
-            "github": null
-        }
-    },
-    {
         "id": "project-legal-site",
         "category": "web",
         "icon": "fas fa-balance-scale",

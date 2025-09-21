@@ -26,32 +26,6 @@
         }
     },
     {
-        "id": "project-erp",
-        "category": "erp",
-        "icon": "fas fa-store",
-        "title": "Multi-Store ERP Implementation",
-        "description": "Led comprehensive ERP system implementation across 26 retail locations for Armtek Group, integrating inventory, sales, and financial management with real-time analytics.",
-        "features": ["Multi-location", "Real-time Sync", "Financial Integration"],
-        "tech": ["SAP", "WMS", "TMS", "1C:Enterprise"],
-        "links": {
-            "demo": null,
-            "github": null
-        }
-    },
-    {
-        "id": "project-bi",
-        "category": "erp",
-        "icon": "fas fa-chart-line",
-        "title": "BI Analytics Platform",
-        "description": "Built comprehensive business intelligence platform using OLAP Cube and Power BI for retail and distribution analytics, providing real-time insights and automated reporting.",
-        "features": ["Real-time Dashboards", "Automated Reports", "KPI Tracking"],
-        "tech": ["Power BI", "OLAP", "SQL Server", "Azure"],
-        "links": {
-            "demo": "#",
-            "github": null
-        }
-    },
-    {
         "id": "project-legal-site",
         "category": "web",
         "icon": "fas fa-balance-scale",
