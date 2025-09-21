@@ -1,0 +1,54 @@
+[
+    {
+        "id": "project-ai-legal",
+        "category": "ai",
+        "icon": "fas fa-robot",
+        "title": "AI Legal Workflow Automation",
+        "description": "Python-based AI system for Legal Status UAB automating document processing and workflow management for international legal cases. Reduced processing time by 70%.",
+        "features": ["Document AI", "Workflow Automation", "Multi-language Support"],
+        "tech": ["Python", "TensorFlow", "FastAPI", "PostgreSQL"],
+        "links": {
+            "demo": "#",
+            "github": "#"
+        }
+    },
+    {
+        "id": "project-planfix-reminder",
+        "category": "ai",
+        "icon": "fas fa-bell",
+        "title": "PlanFix Reminder System",
+        "description": "Automated reminder system integrating with PlanFix CRM to send WhatsApp notifications for overdue tasks and upcoming deadlines. Improved team productivity by 45%.",
+        "features": ["CRM Integration", "WhatsApp API", "Task Automation"],
+        "tech": ["Python", "PlanFix API", "WhatsApp Business", "Scheduler"],
+        "links": {
+            "demo": null,
+            "github": "https://github.com/PtOlga/planfix_reminder"
+        }
+    },
+    {
+        "id": "project-legal-site",
+        "category": "web",
+        "icon": "fas fa-balance-scale",
+        "title": "Legal Status Website",
+        "description": "Corporate website for international legal services with multi-language support, client portal integration, and automated lead management system.",
+        "features": ["Multi-language", "Client Portal", "Lead Automation"],
+        "tech": ["WordPress", "PHP", "JavaScript", "MySQL"],
+        "links": {
+            "demo": "https://status.law",
+            "github": null
+        }
+    },
+    {
+        "id": "project-portfolio",
+        "category": "web",
+        "icon": "fas fa-laptop-code",
+        "title": "Portfolio Website",
+        "description": "Modern, responsive portfolio website showcasing projects and professional experience. Built with vanilla HTML, CSS, and JavaScript for optimal performance.",
+        "features": ["Responsive Design", "Performance Optimized", "SEO Friendly"],
+        "tech": ["HTML5", "CSS3", "JavaScript", "GitHub Pages"],
+        "links": {
+            "demo": "https://ptolga.github.io",
+            "github": "https://github.com/PtOlga/PtOlga.github.io"
+        }
+    }
+]
