@@ -1,7 +1,7 @@
 [
     {
         "id": "project-ai-legal",
-        "category": "ai",
+        "category": ["ai"],
         "icon": "fas fa-robot",
         "title": "AI Legal Workflow Automation",
         "description": "Python-baserat AI-system för Legal Status UAB som automatiserar dokumentbehandling och arbetsflödeshantering för internationella juridiska ärenden. Minskade handläggningstiden med 70%.",
@@ -27,7 +27,7 @@
     },
     {
         "id": "project-legal-site",
-        "category": "web",
+        "category": ["web"],
         "icon": "fas fa-balance-scale",
         "title": "Legal Status Webbplats",
         "description": "Företagswebbplats för internationella juridiska tjänster med flerspråksstöd, klientportalintegration och automatiserat leadhanteringssystem.",
@@ -40,7 +40,7 @@
     },
     {
         "id": "project-portfolio",
-        "category": "web",
+        "category": ["web"],
         "icon": "fas fa-laptop-code",
         "title": "Portfolio Webbplats",
         "description": "Modern, responsiv portfolio-webbplats som visar projekt och professionell erfarenhet. Byggd med vanilla HTML, CSS och JavaScript för optimal prestanda.",
