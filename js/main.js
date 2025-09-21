@@ -153,7 +153,8 @@ function initProjectFiltering() {
             
             // Filter projects
             projectCards.forEach(card => {
-                if (category === 'all' || card.getAttribute('data-category') === category) {
+                if (category === 'all' || 
+                    (Array.isArray(project.category) ? project.category.includes(category) : project.category === category)) {
                     card.classList.remove('hidden');
                 } else {
                     card.classList.add('hidden');

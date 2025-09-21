@@ -14,7 +14,7 @@
     },
     {
         "id": "project-planfix-reminder",
-        "category": "ai",
+        "category": ["ai", "erp"],
         "icon": "fas fa-bell",
         "title": "PlanFix Reminder System",
         "description": "Automated reminder system integrating with PlanFix CRM to send WhatsApp notifications for overdue tasks and upcoming deadlines. Improved team productivity by 45%.",
