@@ -1195,6 +1195,12 @@ li { margin-bottom: 0.5rem; color: var(--text-gray); }
         margin-bottom: 6pt; 
         page-break-inside: avoid; 
     }
+
+    /* Разрыв страницы после второй работы */
+    .resume-job:nth-of-type(2) {
+        page-break-after: always;
+        break-after: page;
+    }
     
     .job-header { 
         margin-bottom: 2pt; 
