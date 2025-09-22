@@ -29,7 +29,7 @@
         "id": "project-legal-site",
         "category": ["web"],
         "icon": "fas fa-balance-scale",
-        "title": "Legal Status Website",
+        "title": "Status Law Website",
         "description": "Corporate website for international legal services with multi-language support, client portal integration, and automated lead management system.",
         "features": ["Multi-language", "Client Portal", "Lead Automation"],
         "tech": ["WordPress", "PHP", "JavaScript", "MySQL", "SEO", "Google Analytics", "Search Console", "Meta Tags"],

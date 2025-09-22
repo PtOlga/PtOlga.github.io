@@ -29,7 +29,7 @@
         "id": "project-legal-site",
         "category": ["web"],
         "icon": "fas fa-balance-scale",
-        "title": "Legal Status Webbplats",
+        "title": "Status Law Webbplats",
         "description": "Företagswebbplats för internationella juridiska tjänster med flerspråksstöd, klientportalintegration och automatiserat leadhanteringssystem.",
         "features": ["Flerspråkig", "Klientportal", "Lead-automation"],
         "tech": ["WordPress", "PHP", "JavaScript", "MySQL", "SEO", "Google Analytics", "Search Console", "Meta Tags"],
