@@ -82,6 +82,8 @@
         "project_3_desc": "Automated CRM integration with WhatsApp notifications (github.com/PtOlga/planfix_reminder)",
         "project_4_name": "BI Analytics Platform",
         "project_4_desc": "Real-time business intelligence solution using Power BI and OLAP technologies",
+        "project_5_name": "Handwritten Digit Recognition",
+        "project_5_desc": "Interactive Streamlit ML application with MNIST-trained Random Forest model for real-time digit recognition",
         "languages_title": "Languages",
         "lang_ru": "Russian",
         "lang_ru_level": "Native",

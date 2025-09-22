@@ -50,5 +50,18 @@
             "demo": "https://ptolga.github.io",
             "github": "https://github.com/PtOlga/PtOlga.github.io"
         }
+    },
+    {
+        "id": "project-streamlit-mnist",
+        "category": ["ai"],
+        "icon": "fas fa-paint-brush",
+        "title": "Handskriven Sifferigenkänning",
+        "description": "Interaktiv Streamlit-webbapplikation för realtidsigenkänning av handskrivna siffror med maskininlärning. Innehåller interaktiv canvas, MNIST-tränad Random Forest-modell och flerspråksstöd.",
+        "features": ["Interaktiv Canvas", "Realtidsigenkänning", "MNIST Dataset", "Flerspråkigt UI"],
+        "tech": ["Python", "Streamlit", "OpenCV", "Scikit-learn", "Random Forest", "MNIST"],
+        "links": {
+            "demo": "https://apptest-fwjneseu6ryz7g6h8edyfu.streamlit.app/",
+            "github": "https://github.com/PtOlga/StreamLit_test"
+        }
     }
 ]
