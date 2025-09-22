@@ -84,6 +84,8 @@
         "project_4_desc": "Affärsintelligenslösning i realtid med Power BI och OLAP-teknologier",
         "project_5_name": "Handskriven Sifferigenkänning", 
         "project_5_desc": "Interaktiv Streamlit ML-applikation med MNIST-tränad Random Forest-modell för realtidsigenkänning av siffror",
+        "project_6_name": "Status Law AI-assistent",
+        "project_6_desc": "Intelligent juridisk chatbot som använder RAG-teknologi, LangChain och flera LLM-modeller med flerspråksstöd",
         "languages_title": "Språk",
         "lang_ru": "Ryska",
         "lang_ru_level": "Modersmål",

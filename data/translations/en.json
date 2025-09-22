@@ -84,6 +84,8 @@
         "project_4_desc": "Real-time business intelligence solution using Power BI and OLAP technologies",
         "project_5_name": "Handwritten Digit Recognition",
         "project_5_desc": "Interactive Streamlit ML application with MNIST-trained Random Forest model for real-time digit recognition",
+        "project_6_name": "Status Law AI Assistant",
+        "project_6_desc": "Intelligent legal chatbot using RAG technology, LangChain, and multiple LLM models with multilingual support",
         "languages_title": "Languages",
         "lang_ru": "Russian",
         "lang_ru_level": "Native",

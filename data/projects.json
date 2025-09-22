@@ -63,5 +63,19 @@
             "demo": "https://apptest-fwjneseu6ryz7g6h8edyfu.streamlit.app/",
             "github": "https://github.com/PtOlga/StreamLit_test"
         }
+    },
+    {
+        "id": "project-status-law-gbot",
+        "category": ["ai"],
+        "icon": "fas fa-robot",
+        "title": "Status Law AI Assistant",
+        "description": "Intelligent legal chatbot using RAG technology with LangChain and Hugging Face. Features multilingual support, knowledge base management, and multiple LLM models (Llama 2, Zephyr 7B, Mistral 7B).",
+        "features": ["RAG Technology", "Multilingual Support", "Knowledge Base Management", "Multiple LLM Models"],
+        "tech": ["Python", "LangChain", "Hugging Face", "FAISS", "Gradio", "LoRA Fine-tuning"],
+        "links": {
+            "demo": "https://huggingface.co/spaces/Rulga/status-law-gbot",
+            "github": "https://github.com/PtOlga/status-law-gbot"
+        }
     }
 ]
+
