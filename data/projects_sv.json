@@ -32,7 +32,7 @@
         "title": "Legal Status Webbplats",
         "description": "Företagswebbplats för internationella juridiska tjänster med flerspråksstöd, klientportalintegration och automatiserat leadhanteringssystem.",
         "features": ["Flerspråkig", "Klientportal", "Lead-automation"],
-        "tech": ["WordPress", "PHP", "JavaScript", "MySQL"],
+        "tech": ["WordPress", "PHP", "JavaScript", "MySQL", "SEO", "Google Analytics", "Search Console", "Meta Tags"],
         "links": {
             "demo": "https://status.law",
             "github": null
@@ -78,4 +78,5 @@
         }
     }
 ]
+
 
