@@ -446,16 +446,29 @@ li { margin-bottom: 0.5rem; color: var(--text-gray); }
 }
 
 .project-link {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 36px;
-    height: 36px;
-    background: var(--light-green);
-    color: var(--primary-green);
-    border-radius: 0.75rem;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 0.875rem;
+    font-weight: 600;
     text-decoration: none;
+    border-radius: 0.5rem;
     transition: all 0.3s;
+    min-width: 120px;
+    text-align: center;
+}
+
+.project-link.primary {
+    background: var(--primary-green);
+    color: var(--white);
+}
+
+.project-link.secondary {
+    background: transparent;
+    color: var(--primary-green);
+    border: 2px solid var(--primary-green);
 }
 
 .project-link:hover {
