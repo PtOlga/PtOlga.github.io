@@ -271,6 +271,7 @@ async function renderResume() {
             <h3>${translations.resume.projects_title}</h3>
             <ul>
                 <li><strong>${translations.resume.project_1_name}:</strong> ${translations.resume.project_1_desc}</li>
+                <li><strong>${translations.resume.project_2_name}:</strong> ${translations.resume.project_2_desc}</li>
                 <li><strong>${translations.resume.project_3_name}:</strong> ${translations.resume.project_3_desc}</li>
                 <li><strong>${translations.resume.project_4_name}:</strong> ${translations.resume.project_4_desc}</li>
                 <li><strong>${translations.resume.project_5_name}:</strong> ${translations.resume.project_5_desc}</li>
