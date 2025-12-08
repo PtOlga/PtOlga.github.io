@@ -55,7 +55,7 @@
         "id": "project-streamlit-mnist",
         "category": ["ai"],
         "icon": "fas fa-paint-brush",
-        "title": "Handskriven Sifferigenkänning",
+        "title": "AI Sifferigenkännare",
         "description": "Interaktiv Streamlit-webbapplikation för realtidsigenkänning av handskrivna siffror med maskininlärning. Innehåller interaktiv canvas, MNIST-tränad Random Forest-modell och flerspråksstöd.",
         "features": ["Interaktiv Canvas", "Realtidsigenkänning", "MNIST Dataset", "Flerspråkigt UI"],
         "tech": ["Python", "Streamlit", "OpenCV", "Scikit-learn", "Random Forest", "MNIST"],

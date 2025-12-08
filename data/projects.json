@@ -55,7 +55,7 @@
         "id": "project-streamlit-mnist",
         "category": ["ai"],
         "icon": "fas fa-paint-brush",
-        "title": "Handwritten Digit Recognition",
+        "title": "AI Digit Recognizer",
         "description": "Interactive Streamlit web application for real-time handwritten digit recognition using machine learning. Features interactive canvas, MNIST-trained Random Forest model, and multi-language support.",
         "features": ["Interactive Canvas", "Real-time Recognition", "MNIST Dataset", "Multi-language UI"],
         "tech": ["Python", "Streamlit", "OpenCV", "Scikit-learn", "Random Forest", "MNIST"],
