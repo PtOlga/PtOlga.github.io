@@ -1,18 +1,5 @@
 [
     {
-        "id": "project-ai-legal",
-        "category": ["ai"],
-        "icon": "fas fa-robot",
-        "title": "AI Legal Workflow Automation",
-        "description": "Python-based AI system for Legal Status UAB automating document processing and workflow management for international legal cases. Reduced processing time by 70%.",
-        "features": ["Document AI", "Workflow Automation", "Multi-language Support"],
-        "tech": ["Python", "TensorFlow", "FastAPI", "PostgreSQL"],
-        "links": {
-            "demo": "#",
-            "github": "#"
-        }
-    },
-    {
         "id": "project-planfix-reminder",
         "category": ["ai", "erp"],
         "icon": "fas fa-bell",
@@ -23,6 +10,19 @@
         "links": {
             "demo": null,
             "github": "https://github.com/PtOlga/planfix_reminder"
+        }
+    },
+    {
+        "id": "project-mega-pdf",
+        "category": ["web", "ai"],
+        "icon": "fas fa-file-pdf",
+        "title": "MEGA PDF Compressor",
+        "description": "Web application for batch PDF compression with dual-mode operation: local folders via File System Access API or direct MEGA Cloud integration. Uses iLovePDF API for professional compression.",
+        "features": ["MEGA Cloud Integration", "Local Folder Support", "Batch Processing", "Auto Backup"],
+        "tech": ["Python", "Flask", "JavaScript", "MEGA SDK", "Docker", "Render"],
+        "links": {
+            "demo": null,
+            "github": "https://github.com/PtOlga/mega-pdf-compressor-en"
         }
     },
     {
@@ -78,5 +78,3 @@
         }
     }
 ]
-
-
