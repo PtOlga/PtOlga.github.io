@@ -4,9 +4,9 @@
         "category": ["ai", "erp"],
         "icon": "fas fa-bell",
         "title": "PlanFix Reminder System",
-        "description": "Automated reminder system integrating with PlanFix CRM to send WhatsApp notifications for overdue tasks and upcoming deadlines. Improved team productivity by 45%.",
-        "features": ["CRM Integration", "WhatsApp API", "Task Automation"],
-        "tech": ["Python", "PlanFix API", "WhatsApp Business", "Scheduler"],
+        "description": "Desktop notification system for PlanFix tasks with modular architecture. Features toast notifications, task categorization (overdue, urgent, current), system tray integration, and built-in diagnostics.",
+        "features": ["Desktop Notifications", "Task Categorization", "System Tray", "Diagnostics"],
+        "tech": ["Python", "PlanFix API", "Tkinter", "PyInstaller"],
         "links": {
             "demo": null,
             "github": "https://github.com/PtOlga/planfix_reminder"

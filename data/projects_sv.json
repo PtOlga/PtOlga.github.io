@@ -4,9 +4,9 @@
         "category": ["ai", "erp"],
         "icon": "fas fa-bell",
         "title": "PlanFix Påminnelsesystem",
-        "description": "Automatiserat påminnelsesystem som integrerar med PlanFix CRM för att skicka WhatsApp-notifieringar för försenade uppgifter och kommande deadlines. Förbättrade teamproduktiviteten med 45%.",
-        "features": ["CRM-integration", "WhatsApp API", "Uppgiftsautomation"],
-        "tech": ["Python", "PlanFix API", "WhatsApp Business", "Scheduler"],
+        "description": "Skrivbordsaviseringssystem för PlanFix-uppgifter med modulär arkitektur. Innehåller popup-aviseringar, uppgiftskategorisering (försenade, brådskande, aktuella), systemfältintegration och inbyggd diagnostik.",
+        "features": ["Skrivbordsaviseringar", "Uppgiftskategorisering", "Systemfält", "Diagnostik"],
+        "tech": ["Python", "PlanFix API", "Tkinter", "PyInstaller"],
         "links": {
             "demo": null,
             "github": "https://github.com/PtOlga/planfix_reminder"
