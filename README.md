@@ -1,4 +1,4 @@
-# 👋 Olga Petrovskaya - Portfolio Website
+# 👋 Olga Saether - Portfolio Website
 
 [![Live Demo](https://img.shields.io/badge/demo-live-brightgreen)](https://ptolga.github.io)
 [![GitHub Pages](https://img.shields.io/badge/hosted-GitHub%20Pages-blue)](https://pages.github.com/)
@@ -158,6 +158,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-**Built with ❤️ by Olga Petrovskaya**
+**Built with ❤️ by Olga Saether**
 
 *Last updated: October 2025*
