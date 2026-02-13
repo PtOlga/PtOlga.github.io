@@ -26,10 +26,10 @@
     },
     "projects": {
         "title": "Utvalda Projekt",
-        "description": "Ett urval av mina senaste arbeten inom AI-automatisering, ERP-implementering och webbutveckling",
+        "description": "Ett urval av mina senaste arbeten inom AI-automatisering, affärsverktyg och webbutveckling",
         "filter_all": "Alla projekt",
         "filter_ai": "AI & Automation",
-        "filter_erp": "ERP/CRM",
+        "filter_erp": "Affärsverktyg",
         "filter_web": "Webbutveckling",
         "live_demo": "Demo",
         "source_code": "Källkod"

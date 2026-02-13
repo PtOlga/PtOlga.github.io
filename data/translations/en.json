@@ -26,10 +26,10 @@
     },
     "projects": {
         "title": "Featured Projects",
-        "description": "A selection of my recent work spanning AI automation, ERP implementation, and web development",
+        "description": "A selection of my recent work spanning AI automation, business tools, and web development",
         "filter_all": "All Projects",
         "filter_ai": "AI & Automation",
-        "filter_erp": "ERP/CRM",
+        "filter_erp": "Business Tools",
         "filter_web": "Web Development",
         "live_demo": "Demo",
         "source_code": "Source Code"

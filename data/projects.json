@@ -14,7 +14,7 @@
     },
     {
         "id": "project-gdpr-scanner",
-        "category": ["web", "ai"],
+        "category": ["ai"],
         "icon": "fas fa-shield-alt",
         "title": "GDPR Compliance Scanner",
         "description": "Flask application for automated GDPR compliance analysis of websites. AI-powered analysis with bilingual interface (EN/SV), generates professional PDF reports with compliance scores and recommendations.",
@@ -40,7 +40,7 @@
     },
     {
         "id": "project-planfix-reminder",
-        "category": ["ai", "erp"],
+        "category": ["erp"],
         "icon": "fas fa-bell",
         "title": "PlanFix Reminder System",
         "description": "Desktop notification system for PlanFix tasks with modular architecture. Features toast notifications, task categorization (overdue, urgent, current), system tray integration, and built-in diagnostics.",
@@ -53,7 +53,7 @@
     },
     {
         "id": "project-mega-pdf",
-        "category": ["web", "ai"],
+        "category": ["erp"],
         "icon": "fas fa-file-pdf",
         "title": "MEGA PDF Compressor",
         "description": "Web application for batch PDF compression with dual-mode operation: local folders via File System Access API or direct MEGA Cloud integration. Uses iLovePDF API for professional compression.",

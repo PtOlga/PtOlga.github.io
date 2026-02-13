@@ -14,7 +14,7 @@
     },
     {
         "id": "project-gdpr-scanner",
-        "category": ["web", "ai"],
+        "category": ["ai"],
         "icon": "fas fa-shield-alt",
         "title": "GDPR-efterlevnadsskanner",
         "description": "Flask-applikation för automatiserad GDPR-efterlevnadsanalys av webbplatser. AI-driven analys med tvåspråkigt gränssnitt (EN/SV), genererar professionella PDF-rapporter med efterlevnadspoäng och rekommendationer.",
@@ -40,7 +40,7 @@
     },
     {
         "id": "project-planfix-reminder",
-        "category": ["ai", "erp"],
+        "category": ["erp"],
         "icon": "fas fa-bell",
         "title": "PlanFix Påminnelsesystem",
         "description": "Skrivbordsaviseringssystem för PlanFix-uppgifter med modulär arkitektur. Innehåller popup-aviseringar, uppgiftskategorisering (försenade, brådskande, aktuella), systemfältintegration och inbyggd diagnostik.",
@@ -53,7 +53,7 @@
     },
     {
         "id": "project-mega-pdf",
-        "category": ["web", "ai"],
+        "category": ["erp"],
         "icon": "fas fa-file-pdf",
         "title": "MEGA PDF Kompressor",
         "description": "Webbapplikation för batchkomprimering av PDF-filer med två lägen: lokala mappar via File System Access API eller direkt MEGA Cloud-integration. Använder iLovePDF API för professionell komprimering.",
