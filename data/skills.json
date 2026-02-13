@@ -5,23 +5,54 @@
         "title": "Programming & AI",
         "items": [
             { "name": "Python", "level": "expert" },
+            { "name": "Flask", "level": "advanced" },
+            { "name": "FastAPI", "level": "intermediate" },
             { "name": "TensorFlow", "level": "advanced" },
-            { "name": "scikit-learn", "level": "advanced" },
+            { "name": "LangChain", "level": "intermediate" },
             { "name": "pandas", "level": "expert" },
             { "name": "NumPy", "level": "advanced" },
+            { "name": "scikit-learn", "level": "advanced" },
             { "name": "API integration", "level": "intermediate" }
+        ]
+    },
+    {
+        "id": "skills-web-modern",
+        "icon": "fas fa-laptop-code",
+        "title": "Modern Web Development",
+        "items": [
+            { "name": "Next.js", "level": "advanced" },
+            { "name": "TypeScript", "level": "advanced" },
+            { "name": "React", "level": "advanced" },
+            { "name": "Tailwind CSS", "level": "advanced" },
+            { "name": "JavaScript", "level": "expert" },
+            { "name": "HTML5/CSS3", "level": "expert" },
+            { "name": "WordPress", "level": "advanced" },
+            { "name": "PHP", "level": "intermediate" }
         ]
     },
     {
         "id": "skills-databases",
         "icon": "fas fa-database",
-        "title": "Databases & Systems",
+        "title": "Databases & Analytics",
         "items": [
             { "name": "MS SQL Server", "level": "expert" },
-            { "name": "Oracle", "level": "advanced" },
+            { "name": "PostgreSQL", "level": "intermediate" },
+            { "name": "MySQL", "level": "advanced" },
             { "name": "T-SQL", "level": "expert" },
             { "name": "Power BI", "level": "advanced" },
             { "name": "OLAP", "level": "advanced" }
+        ]
+    },
+    {
+        "id": "skills-devops",
+        "icon": "fas fa-server",
+        "title": "DevOps & Deployment",
+        "items": [
+            { "name": "Railway", "level": "advanced" },
+            { "name": "Docker", "level": "intermediate" },
+            { "name": "GitHub Actions", "level": "intermediate" },
+            { "name": "Git", "level": "advanced" },
+            { "name": "Playwright", "level": "intermediate" }
         ]
     },
     {
@@ -32,20 +63,21 @@
             { "name": "Bitrix24", "level": "expert" },
             { "name": "PlanFix", "level": "expert" },
             { "name": "WMS/TMS", "level": "advanced" },
-            { "name": "Business Process", "level": "expert" }
+            { "name": "Business Process", "level": "expert" },
+            { "name": "ITIL", "level": "advanced" }
         ]
     },
     {
-        "id": "skills-web",
-        "icon": "fas fa-globe",
-        "title": "Web & Marketing",
+        "id": "skills-marketing",
+        "icon": "fas fa-chart-line",
+        "title": "SEO & Marketing",
         "items": [
-            { "name": "WordPress", "level": "advanced" },
-            { "name": "PHP", "level": "intermediate" },
-            { "name": "JavaScript", "level": "advanced" },
             { "name": "SEO", "level": "expert" },
+            { "name": "Google Analytics", "level": "advanced" },
+            { "name": "Google Search Console", "level": "advanced" },
             { "name": "Google Ads", "level": "advanced" },
-            { "name": "Analytics", "level": "advanced" }
+            { "name": "Meta Tags", "level": "expert" },
+            { "name": "GDPR Compliance", "level": "advanced" }
         ]
     }
 ]
