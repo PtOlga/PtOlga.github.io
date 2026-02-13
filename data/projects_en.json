@@ -1,5 +1,44 @@
 [
     {
+        "id": "project-itos-website",
+        "category": "web",
+        "icon": "fas fa-globe",
+        "title": "ITOS Website",
+        "description": "Modern Next.js 15 website for IT solutions and web development services. Features multi-language support (EN/SV), authentication, blog system, portfolio showcase, and interactive pricing calculator.",
+        "features": ["Next.js 15 App Router", "Internationalization (next-intl)", "NextAuth Authentication", "Shadcn/ui Components", "Blog & Portfolio", "Dark Mode"],
+        "tech": ["Next.js 15", "TypeScript", "Tailwind CSS", "Shadcn/ui", "NextAuth", "Railway"],
+        "links": {
+            "demo": "https://itos-website-production.up.railway.app",
+            "github": "https://github.com/PtOlga/itos-website"
+        }
+    },
+    {
+        "id": "project-gdpr-scanner",
+        "category": ["web", "ai"],
+        "icon": "fas fa-shield-alt",
+        "title": "GDPR Compliance Scanner",
+        "description": "Flask application for automated GDPR compliance analysis of websites. AI-powered analysis with bilingual interface (EN/SV), generates professional PDF reports with compliance scores and recommendations.",
+        "features": ["AI-Powered Analysis", "PDF Report Generation", "Bilingual Interface", "Compliance Scoring", "Automated Recommendations"],
+        "tech": ["Python", "Flask", "OpenAI API", "Playwright", "Railway", "WeasyPrint"],
+        "links": {
+            "demo": "https://web-production-0704b.up.railway.app",
+            "github": null
+        }
+    },
+    {
+        "id": "project-gdpr-cookie-plugin",
+        "category": "web",
+        "icon": "fas fa-cookie-bite",
+        "title": "GDPR Cookie iTos Plugin",
+        "description": "WordPress plugin for GDPR cookie consent with aggressive script blocking and Google Consent Mode v2 integration. Features output buffering, auto-updates via GitHub, and detailed cookie lists.",
+        "features": ["Script Blocking", "Google Consent Mode v2", "GitHub Auto-updater", "Two-level Consent", "Rate Limiting"],
+        "tech": ["WordPress", "PHP", "JavaScript", "Google Consent API"],
+        "links": {
+            "demo": null,
+            "github": "https://github.com/PtOlga/gdpr-cookie-itos"
+        }
+    },
+    {
         "id": "project-ai-legal",
         "category": "ai",
         "icon": "fas fa-robot",

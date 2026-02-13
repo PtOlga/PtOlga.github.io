@@ -1,5 +1,44 @@
 [
     {
+        "id": "project-itos-website",
+        "category": ["web"],
+        "icon": "fas fa-globe",
+        "title": "ITOS Webbplats",
+        "description": "Modern Next.js 15-webbplats för IT-lösningar och webbutvecklingstjänster. Innehåller flerspråksstöd (EN/SV), autentisering, bloggsystem, portfolio-showcase och interaktiv priskalkylator.",
+        "features": ["Next.js 15 App Router", "Internationalisering (next-intl)", "NextAuth-autentisering", "Shadcn/ui-komponenter", "Blogg & Portfolio", "Mörkt läge"],
+        "tech": ["Next.js 15", "TypeScript", "Tailwind CSS", "Shadcn/ui", "NextAuth", "Railway"],
+        "links": {
+            "demo": "https://itos-website-production.up.railway.app",
+            "github": "https://github.com/PtOlga/itos-website"
+        }
+    },
+    {
+        "id": "project-gdpr-scanner",
+        "category": ["web", "ai"],
+        "icon": "fas fa-shield-alt",
+        "title": "GDPR-efterlevnadsskanner",
+        "description": "Flask-applikation för automatiserad GDPR-efterlevnadsanalys av webbplatser. AI-driven analys med tvåspråkigt gränssnitt (EN/SV), genererar professionella PDF-rapporter med efterlevnadspoäng och rekommendationer.",
+        "features": ["AI-driven analys", "PDF-rapportgenerering", "Tvåspråkigt gränssnitt", "Efterlevnadspoäng", "Automatiska rekommendationer"],
+        "tech": ["Python", "Flask", "OpenAI API", "Playwright", "Railway", "WeasyPrint"],
+        "links": {
+            "demo": "https://web-production-0704b.up.railway.app",
+            "github": null
+        }
+    },
+    {
+        "id": "project-gdpr-cookie-plugin",
+        "category": ["web"],
+        "icon": "fas fa-cookie-bite",
+        "title": "GDPR Cookie iTos Plugin",
+        "description": "WordPress-plugin för GDPR cookie-samtycke med aggressiv skriptblockering och Google Consent Mode v2-integration. Innehåller output buffering, auto-uppdateringar via GitHub och detaljerade cookie-listor.",
+        "features": ["Skriptblockering", "Google Consent Mode v2", "GitHub auto-uppdatering", "Tvånivåsamtycke", "Hastighetsbegränsning"],
+        "tech": ["WordPress", "PHP", "JavaScript", "Google Consent API"],
+        "links": {
+            "demo": null,
+            "github": "https://github.com/PtOlga/gdpr-cookie-itos"
+        }
+    },
+    {
         "id": "project-planfix-reminder",
         "category": ["ai", "erp"],
         "icon": "fas fa-bell",
