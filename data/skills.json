@@ -51,8 +51,7 @@
             { "name": "Railway", "level": "advanced" },
             { "name": "Docker", "level": "intermediate" },
             { "name": "GitHub Actions", "level": "intermediate" },
-            { "name": "Git", "level": "advanced" },
-            { "name": "Playwright", "level": "intermediate" }
+            { "name": "Git", "level": "advanced" }
         ]
     },
     {
