@@ -10,7 +10,7 @@ const DATA_URLS = {
 };
 
 const CACHE = {};
-const CACHE_VERSION = '20260216v3'; // Update this when data changes
+const CACHE_VERSION = '20260216v4'; // Update this when data changes
 
 async function fetchData(url) {
     const cacheKey = `${url}_${CACHE_VERSION}`;
@@ -281,6 +281,8 @@ async function renderResume() {
                 <li><strong>${translations.resume.project_4_name}:</strong> ${translations.resume.project_4_desc}</li>
                 <li><strong>${translations.resume.project_5_name}:</strong> ${translations.resume.project_5_desc}</li>
                 <li><strong>${translations.resume.project_6_name}:</strong> ${translations.resume.project_6_desc}</li>
+                <li><strong>${translations.resume.project_7_name}:</strong> ${translations.resume.project_7_desc}</li>
+                <li><strong>${translations.resume.project_8_name}:</strong> ${translations.resume.project_8_desc}</li>
             </ul>
         </div>
 
