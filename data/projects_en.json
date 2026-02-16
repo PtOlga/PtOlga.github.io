@@ -1,7 +1,7 @@
 [
     {
         "id": "project-itos-website",
-        "category": "web",
+        "category": ["web"],
         "icon": "fas fa-globe",
         "title": "ITOS Website",
         "description": "Modern Next.js 15 website for IT solutions and web development services. Features multi-language support (EN/SV), authentication, blog system, portfolio showcase, and interactive pricing calculator.",
@@ -14,7 +14,7 @@
     },
     {
         "id": "project-gdpr-scanner",
-        "category": ["web", "ai"],
+        "category": ["ai", "web"],
         "icon": "fas fa-shield-alt",
         "title": "GDPR Compliance Scanner",
         "description": "Flask application for automated GDPR compliance analysis of websites. AI-powered analysis with bilingual interface (EN/SV), generates professional PDF reports with compliance scores and recommendations.",
@@ -27,7 +27,7 @@
     },
     {
         "id": "project-gdpr-cookie-plugin",
-        "category": "web",
+        "category": ["web"],
         "icon": "fas fa-cookie-bite",
         "title": "GDPR Cookie iTos Plugin",
         "description": "WordPress plugin for GDPR cookie consent with aggressive script blocking and Google Consent Mode v2 integration. Features output buffering, auto-updates via GitHub, and detailed cookie lists.",
@@ -39,39 +39,39 @@
         }
     },
     {
-        "id": "project-ai-legal",
-        "category": "ai",
-        "icon": "fas fa-robot",
-        "title": "AI Legal Workflow Automation",
-        "description": "Python-based AI system for Legal Status UAB automating document processing and workflow management for international legal cases. Reduced processing time by 70%.",
-        "features": ["Document AI", "Workflow Automation", "Multi-language Support"],
-        "tech": ["Python", "TensorFlow", "FastAPI", "PostgreSQL"],
-        "links": {
-            "demo": "#",
-            "github": "#"
-        }
-    },
-    {
         "id": "project-planfix-reminder",
-        "category": "ai",
+        "category": ["erp"],
         "icon": "fas fa-bell",
         "title": "PlanFix Reminder System",
-        "description": "Automated reminder system integrating with PlanFix CRM to send WhatsApp notifications for overdue tasks and upcoming deadlines. Improved team productivity by 45%.",
-        "features": ["CRM Integration", "WhatsApp API", "Task Automation"],
-        "tech": ["Python", "PlanFix API", "WhatsApp Business", "Scheduler"],
+        "description": "Desktop notification system for PlanFix tasks with modular architecture. Features toast notifications, task categorization (overdue, urgent, current), system tray integration, and built-in diagnostics.",
+        "features": ["Desktop Notifications", "Task Categorization", "System Tray", "Diagnostics"],
+        "tech": ["Python", "PlanFix API", "Tkinter", "PyInstaller"],
         "links": {
             "demo": null,
             "github": "https://github.com/PtOlga/planfix_reminder"
         }
     },
     {
+        "id": "project-mega-pdf",
+        "category": ["erp"],
+        "icon": "fas fa-file-pdf",
+        "title": "MEGA PDF Compressor",
+        "description": "Web application for batch PDF compression with two modes: local folders via File System Access API or direct MEGA Cloud integration. Uses iLovePDF API for professional compression.",
+        "features": ["MEGA Cloud Integration", "Local Folder Support", "Batch Processing", "Auto-backup"],
+        "tech": ["Python", "Flask", "JavaScript", "MEGA SDK", "Docker", "Render"],
+        "links": {
+            "demo": null,
+            "github": "https://github.com/PtOlga/mega-pdf-compressor-en"
+        }
+    },
+    {
         "id": "project-legal-site",
-        "category": "web",
+        "category": ["web"],
         "icon": "fas fa-balance-scale",
-        "title": "Legal Status Website",
+        "title": "Status Law Website",
         "description": "Corporate website for international legal services with multi-language support, client portal integration, and automated lead management system.",
         "features": ["Multi-language", "Client Portal", "Lead Automation"],
-        "tech": ["WordPress", "PHP", "JavaScript", "MySQL"],
+        "tech": ["WordPress", "PHP", "JavaScript", "MySQL", "SEO", "Google Analytics", "Search Console", "Meta Tags"],
         "links": {
             "demo": "https://status.law",
             "github": null
@@ -79,7 +79,7 @@
     },
     {
         "id": "project-portfolio",
-        "category": "web",
+        "category": ["web"],
         "icon": "fas fa-laptop-code",
         "title": "Portfolio Website",
         "description": "Modern, responsive portfolio website showcasing projects and professional experience. Built with vanilla HTML, CSS, and JavaScript for optimal performance.",
@@ -88,6 +88,32 @@
         "links": {
             "demo": "https://ptolga.github.io",
             "github": "https://github.com/PtOlga/PtOlga.github.io"
+        }
+    },
+    {
+        "id": "project-streamlit-mnist",
+        "category": ["ai"],
+        "icon": "fas fa-paint-brush",
+        "title": "AI Digit Recognizer",
+        "description": "Interactive Streamlit web application for real-time handwritten digit recognition using machine learning. Features interactive canvas, MNIST-trained Random Forest model, and multi-language support.",
+        "features": ["Interactive Canvas", "Real-time Recognition", "MNIST Dataset", "Multi-language UI"],
+        "tech": ["Python", "Streamlit", "OpenCV", "Scikit-learn", "Random Forest", "MNIST"],
+        "links": {
+            "demo": "https://apptest-fwjneseu6ryz7g6h8edyfu.streamlit.app/",
+            "github": "https://github.com/PtOlga/StreamLit_test"
+        }
+    },
+    {
+        "id": "project-status-law-gbot",
+        "category": ["ai"],
+        "icon": "fas fa-robot",
+        "title": "Status Law AI Assistant",
+        "description": "Intelligent legal chatbot using RAG technology with LangChain and Hugging Face. Features multi-language support, knowledge base management, and multiple LLM models (Llama 2, Zephyr 7B, Mistral 7B).",
+        "features": ["RAG Technology", "Multi-language Support", "Knowledge Base Management", "Multiple LLM Models"],
+        "tech": ["Python", "LangChain", "Hugging Face", "FAISS", "Gradio", "LoRA Fine-tuning"],
+        "links": {
+            "demo": "https://huggingface.co/spaces/Rulga/status-law-gbot",
+            "github": "https://github.com/PtOlga/status-law-gbot"
         }
     }
 ]

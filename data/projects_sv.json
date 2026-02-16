@@ -14,7 +14,7 @@
     },
     {
         "id": "project-gdpr-scanner",
-        "category": ["ai"],
+        "category": ["ai", "web"],
         "icon": "fas fa-shield-alt",
         "title": "GDPR-efterlevnadsskanner",
         "description": "Flask-applikation för automatiserad GDPR-efterlevnadsanalys av webbplatser. AI-driven analys med tvåspråkigt gränssnitt (EN/SV), genererar professionella PDF-rapporter med efterlevnadspoäng och rekommendationer.",
