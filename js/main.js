@@ -10,14 +10,16 @@ const DATA_URLS = {
 };
 
 const CACHE = {};
+const CACHE_VERSION = '20260216'; // Update this when data changes
 
 async function fetchData(url) {
-    if (CACHE[url]) {
-        return CACHE[url];
+    const cacheKey = `${url}_${CACHE_VERSION}`;
+    if (CACHE[cacheKey]) {
+        return CACHE[cacheKey];
     }
-    const response = await fetch(url);
+    const response = await fetch(`${url}?v=${CACHE_VERSION}`);
     const data = await response.json();
-    CACHE[url] = data;
+    CACHE[cacheKey] = data;
     return data;
 }
 
