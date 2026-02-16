@@ -91,7 +91,7 @@ async function renderProjects() {
     container.innerHTML = projectsData.map(project => {
         const categoryLabels = {
             'ai': (translations.projects && translations.projects.filter_ai) || 'AI & Automation',
-            'erp': (translations.projects && translations.projects.filter_erp) || 'ERP/CRM', 
+            'erp': (translations.projects && translations.projects.filter_erp) || 'Business Tools',
             'web': (translations.projects && translations.projects.filter_web) || 'Web Development'
         };
 
