@@ -1393,9 +1393,7 @@ li { margin-bottom: 0.5rem; color: var(--text-gray); }
 }
 
 .project-card.hidden {
-    opacity: 0;
-    transform: scale(0.8);
-    pointer-events: none;
+    display: none;
 }
 
 .project-header {

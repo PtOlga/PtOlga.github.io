@@ -14,7 +14,7 @@
     },
     {
         "id": "project-gdpr-scanner",
-        "category": ["ai"],
+        "category": ["ai", "web"],
         "icon": "fas fa-shield-alt",
         "title": "GDPR Compliance Scanner",
         "description": "Flask application for automated GDPR compliance analysis of websites. AI-powered analysis with bilingual interface (EN/SV), generates professional PDF reports with compliance scores and recommendations.",

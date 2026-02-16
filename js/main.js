@@ -10,7 +10,7 @@ const DATA_URLS = {
 };
 
 const CACHE = {};
-const CACHE_VERSION = '20260216'; // Update this when data changes
+const CACHE_VERSION = '20260216v2'; // Update this when data changes
 
 async function fetchData(url) {
     const cacheKey = `${url}_${CACHE_VERSION}`;
@@ -142,8 +142,10 @@ async function renderProjects() {
         `;
     }).join('');
 
-    // Initialize project filtering
-    initProjectFiltering();
+    // Initialize project filtering after DOM update
+    setTimeout(() => {
+        initProjectFiltering();
+    }, 0);
 }
 
 function initProjectFiltering() {
@@ -153,14 +155,15 @@ function initProjectFiltering() {
     filterButtons.forEach(button => {
         button.addEventListener('click', () => {
             const category = button.getAttribute('data-category');
-            
+
             // Update active button
             filterButtons.forEach(btn => btn.classList.remove('active'));
             button.classList.add('active');
-            
+
             // Filter projects
             projectCards.forEach(card => {
                 const cardCategories = card.getAttribute('data-category');
+
                 if (category === 'all' || cardCategories.includes(category)) {
                     card.classList.remove('hidden');
                 } else {
