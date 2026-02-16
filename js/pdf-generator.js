@@ -1,22 +1,30 @@
 // PDF Resume Generator with Green Design
 // Uses jsPDF to create a professional 2-page resume
 
-async function generateResumePDF() {
+async function generateResumePDF(event) {
+    // Find button
+    const button = event ? event.target.closest('button') : document.querySelector('button[onclick*="generateResumePDF"]');
+
     try {
+        // Check if jsPDF is loaded
+        if (typeof window.jspdf === 'undefined') {
+            alert('PDF library is loading. Please try again in a moment.');
+            return;
+        }
+
         // Get current language from active button
         const currentLang = document.querySelector('.language-btn.active').getAttribute('data-lang');
-        
+
         // Fetch translations and data
         const translations = await fetchData(DATA_URLS[currentLang]);
         const experienceUrl = currentLang === 'sv' ? DATA_URLS.experience_sv : DATA_URLS.experience;
         const experienceData = await fetchData(experienceUrl);
-        
+
         // Show loading indicator
-        const button = event.target.closest('button');
         const originalHTML = button.innerHTML;
         button.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Generating PDF...';
         button.disabled = true;
-        
+
         // Create PDF
         const { jsPDF } = window.jspdf;
         const doc = new jsPDF({
@@ -394,12 +402,15 @@ async function generateResumePDF() {
 
     } catch (error) {
         console.error('Error generating PDF:', error);
-        alert('Error generating PDF. Please try again.');
+        alert('Error generating PDF: ' + error.message + '. Please try again.');
 
         // Restore button
-        const button = event.target.closest('button');
-        button.innerHTML = '<i class="fas fa-file-pdf"></i> Download PDF Resume';
-        button.disabled = false;
+        if (button) {
+            const currentLang = document.querySelector('.language-btn.active')?.getAttribute('data-lang') || 'en';
+            const buttonText = currentLang === 'sv' ? 'Ladda ner PDF CV' : 'Download PDF Resume';
+            button.innerHTML = `<i class="fas fa-file-pdf"></i> ${buttonText}`;
+            button.disabled = false;
+        }
     }
 }
 
