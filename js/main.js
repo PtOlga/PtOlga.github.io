@@ -5,12 +5,13 @@ const DATA_URLS = {
     projects_en: 'data/projects.json',
     projects_sv: 'data/projects_sv.json',
     skills: 'data/skills.json',
+    experience: 'data/experience.json',
     experience_en: 'data/experience.json',
     experience_sv: 'data/experience_sv.json'
 };
 
 const CACHE = {};
-const CACHE_VERSION = '20260216v7'; // Update this when data changes
+const CACHE_VERSION = '20260216v8'; // Update this when data changes
 
 async function fetchData(url) {
     const cacheKey = `${url}_${CACHE_VERSION}`;

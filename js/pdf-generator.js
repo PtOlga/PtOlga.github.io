@@ -17,7 +17,7 @@ async function generateResumePDF(event) {
 
         // Fetch translations and data
         const translations = await fetchData(DATA_URLS[currentLang]);
-        const experienceUrl = currentLang === 'sv' ? DATA_URLS.experience_sv : DATA_URLS.experience;
+        const experienceUrl = currentLang === 'sv' ? DATA_URLS.experience_sv : DATA_URLS.experience_en;
         const experienceData = await fetchData(experienceUrl);
 
         // Show loading indicator
