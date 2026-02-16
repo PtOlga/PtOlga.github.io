@@ -52,8 +52,9 @@
     },
     "resume": {
         "title": "CV",
-        "description": "Utskrivbar version optimerad för rekrytering (2 sidor)",
+        "description": "Professionellt CV optimerat för rekrytering (2 sidor)",
         "print_button": "Skriv ut / Spara PDF (2 sidor)",
+        "download_button": "Ladda ner PDF CV",
         "summary_title": "Professionell Sammanfattning",
         "summary_text": "Erfaren IT-konsult och Python-utvecklare med 15+ års erfarenhet av ERP/CRM-implementering och affärsautomatisering. För närvarande utvecklar jag AI-integrerade lösningar för internationella juridiska tjänster samtidigt som jag hanterar olika frilansprojekt. Dokumenterad förmåga att leda utvecklingsteam, implementera komplexa system över flera butiker och att vara medägare i ett framgångsrikt IT-konsultföretag. Flytande i ryska, engelska och svenska.",
         "skills_title": "Kärnkompetenser",

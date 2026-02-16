@@ -8,8 +8,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    
+
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- jsPDF for PDF generation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 </head>
 <body>
     <div class="language-selector no-print">
@@ -119,8 +122,8 @@
             <div class="section-title">
                 <h2 data-i18n="resume.title"></h2>
                 <p data-i18n="resume.description"></p>
-                <button class="btn-primary no-print" onclick="window.print()" style="margin-top: 1rem;">
-                    <i class="fas fa-print"></i> <span data-i18n="resume.print_button"></span>
+                <button class="btn-primary no-print" onclick="generateResumePDF()" style="margin-top: 1rem;">
+                    <i class="fas fa-file-pdf"></i> <span data-i18n="resume.download_button"></span>
                 </button>
             </div>
             
@@ -189,5 +192,6 @@
     </button>
 
     <script src="js/main.js"></script>
+    <script src="js/pdf-generator.js"></script>
 </body>
 </html>

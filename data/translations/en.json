@@ -52,8 +52,9 @@
     },
     "resume": {
         "title": "Resume",
-        "description": "Printable version optimized for recruitment (2 pages)",
+        "description": "Professional resume optimized for recruitment (2 pages)",
         "print_button": "Print / Save PDF (2 pages)",
+        "download_button": "Download PDF Resume",
         "summary_title": "Professional Summary",
         "summary_text": "Experienced IT Consultant and Python Developer with 15+ years in ERP/CRM implementation and business automation. Currently developing AI-integrated solutions for international legal services while managing diverse freelance projects. Proven track record of leading development teams, implementing complex systems across multiple retail locations, and co-owning a successful IT consultancy. Fluent in Russian, English, and Swedish.",
         "skills_title": "Core Competencies",

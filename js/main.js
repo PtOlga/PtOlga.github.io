@@ -10,7 +10,7 @@ const DATA_URLS = {
 };
 
 const CACHE = {};
-const CACHE_VERSION = '20260216v5'; // Update this when data changes
+const CACHE_VERSION = '20260216v6'; // Update this when data changes
 
 async function fetchData(url) {
     const cacheKey = `${url}_${CACHE_VERSION}`;
