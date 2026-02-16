@@ -34,8 +34,8 @@ async function generateResumePDF(event) {
         });
         
         // Colors
-        const greenPrimary = [16, 185, 129]; // #10b981 - Modern green
-        const greenDark = [5, 150, 105]; // #059669
+        const greenPrimary = [26, 188, 156]; // #1abc9c - Your green
+        const greenDark = [22, 160, 133]; // #16a085 - Darker shade
         const textDark = [31, 41, 55]; // #1f2937
         const textGray = [107, 114, 128]; // #6b7280
         const white = [255, 255, 255];
@@ -60,87 +60,110 @@ async function generateResumePDF(event) {
                 img.onload = resolve;
                 img.onerror = reject;
             });
-            
-            // Draw circular photo
-            const photoSize = 35;
+
+            // Draw circular photo with proper clipping
+            const photoSize = 40;
             const photoX = leftPanelWidth / 2;
-            const photoY = 20;
-            
+            const photoY = 25;
+
+            // Create circular clipping path
+            doc.saveGraphicsState();
+
+            // Draw white circle background
             doc.setFillColor(...white);
             doc.circle(photoX, photoY, photoSize / 2 + 1, 'F');
-            doc.addImage(img, 'JPEG', photoX - photoSize / 2, photoY - photoSize / 2, photoSize, photoSize, '', 'FAST', 0);
-            
-            // Clip to circle (visual effect)
+
+            // Add image centered and cropped to circle
+            const imgAspect = img.width / img.height;
+            let imgWidth = photoSize;
+            let imgHeight = photoSize;
+            let imgX = photoX - photoSize / 2;
+            let imgY = photoY - photoSize / 2;
+
+            // Adjust for aspect ratio to fill circle
+            if (imgAspect > 1) {
+                imgWidth = photoSize * imgAspect;
+                imgX = photoX - (imgWidth / 2);
+            } else {
+                imgHeight = photoSize / imgAspect;
+                imgY = photoY - (imgHeight / 2);
+            }
+
+            doc.addImage(img, 'JPEG', imgX, imgY, imgWidth, imgHeight, '', 'FAST');
+
+            // Draw white circle border
             doc.setDrawColor(...white);
-            doc.setLineWidth(2);
+            doc.setLineWidth(3);
             doc.circle(photoX, photoY, photoSize / 2, 'S');
+
+            doc.restoreGraphicsState();
         } catch (error) {
             console.warn('Could not load profile photo:', error);
         }
         
         // Name and title on left panel
-        let yPos = 60;
+        let yPos = 72;
         doc.setTextColor(...white);
-        doc.setFontSize(24);
+        doc.setFontSize(36); // 24 * 1.5
         doc.setFont('helvetica', 'bold');
         doc.text('Olga Saether', leftPanelWidth / 2, yPos, { align: 'center' });
-        
-        yPos += 8;
-        doc.setFontSize(10);
+
+        yPos += 12;
+        doc.setFontSize(15); // 10 * 1.5
         doc.setFont('helvetica', 'normal');
-        const subtitle = currentLang === 'sv' ? 'Python AI-utvecklare &\nERP/CRM-konsult' : 'Python AI Developer &\nERP/CRM Consultant';
+        const subtitle = currentLang === 'sv' ? 'Python AI Developer &\nERP/CRM Consultant' : 'Python AI Developer &\nERP/CRM Consultant';
         const subtitleLines = doc.splitTextToSize(subtitle, leftPanelWidth - 10);
         doc.text(subtitleLines, leftPanelWidth / 2, yPos, { align: 'center' });
-        
+
         // Contact info on left panel
-        yPos += 15;
-        doc.setFontSize(9);
+        yPos += 20;
+        doc.setFontSize(13.5); // 9 * 1.5
         const contactInfo = [
-            { icon: '📍', text: 'Charlottenberg, 673 92' },
-            { icon: '📞', text: '+46 737 686 471' },
-            { icon: '✉', text: '5441700@gmail.com' },
-            { icon: '🔗', text: 'PtOlga.github.io' }
+            { text: 'Charlottenberg, 673 92' },
+            { text: '+46 737 686 471' },
+            { text: '5441700@gmail.com' },
+            { text: 'PtOlga.github.io' }
         ];
-        
+
         contactInfo.forEach(item => {
-            doc.text(item.icon, 5, yPos);
-            doc.text(item.text, 12, yPos);
-            yPos += 6;
+            const lines = doc.splitTextToSize(item.text, leftPanelWidth - 10);
+            doc.text(lines, leftPanelWidth / 2, yPos, { align: 'center' });
+            yPos += 9; // 6 * 1.5
         });
         
         // Websites section on left panel
-        yPos += 5;
-        doc.setFontSize(11);
+        yPos += 8;
+        doc.setFontSize(16.5); // 11 * 1.5
         doc.setFont('helvetica', 'bold');
-        const websitesTitle = currentLang === 'sv' ? 'Webbplatser & Profiler' : 'Websites & Profiles';
-        doc.text(websitesTitle, 5, yPos);
-        
-        yPos += 6;
-        doc.setFontSize(8);
+        const websitesTitle = currentLang === 'sv' ? 'Webbplatser' : 'Websites';
+        doc.text(websitesTitle, leftPanelWidth / 2, yPos, { align: 'center' });
+
+        yPos += 9;
+        doc.setFontSize(12); // 8 * 1.5
         doc.setFont('helvetica', 'normal');
         const websites = [
-            'linkedin.com/in/olga-petrovskaya',
+            'linkedin.com/in/\nolga-petrovskaya',
             'github.com/PtOlga',
             'status.law'
         ];
-        
+
         websites.forEach(site => {
             const lines = doc.splitTextToSize(site, leftPanelWidth - 10);
-            doc.text(lines, 5, yPos);
-            yPos += 5;
+            doc.text(lines, leftPanelWidth / 2, yPos, { align: 'center' });
+            yPos += lines.length * 6 + 2;
         });
-        
+
         // Skills section on left panel
-        yPos += 5;
-        doc.setFontSize(11);
+        yPos += 8;
+        doc.setFontSize(16.5); // 11 * 1.5
         doc.setFont('helvetica', 'bold');
         const skillsTitle = currentLang === 'sv' ? 'Kompetenser' : 'Core Skills';
-        doc.text(skillsTitle, 5, yPos);
-        
-        yPos += 6;
-        doc.setFontSize(8);
+        doc.text(skillsTitle, leftPanelWidth / 2, yPos, { align: 'center' });
+
+        yPos += 9;
+        doc.setFontSize(12); // 8 * 1.5
         doc.setFont('helvetica', 'normal');
-        
+
         const skillsList = [
             'Software development',
             'Business analysis',
@@ -151,36 +174,36 @@ async function generateResumePDF(event) {
             'Problem solving',
             'Team leadership'
         ];
-        
+
         skillsList.forEach(skill => {
-            doc.text('• ' + skill, 5, yPos);
-            yPos += 5;
+            doc.text('• ' + skill, leftPanelWidth / 2, yPos, { align: 'center' });
+            yPos += 7.5; // 5 * 1.5
         });
         
         // Right panel - Professional Summary
         yPos = 20;
         doc.setTextColor(...textDark);
-        doc.setFontSize(14);
+        doc.setFontSize(21); // 14 * 1.5
         doc.setFont('helvetica', 'bold');
         doc.text(translations.resume.summary_title, rightPanelX, yPos);
-        
-        yPos += 7;
-        doc.setFontSize(9);
+
+        yPos += 10.5; // 7 * 1.5
+        doc.setFontSize(13.5); // 9 * 1.5
         doc.setFont('helvetica', 'normal');
         doc.setTextColor(...textGray);
         const summaryLines = doc.splitTextToSize(translations.resume.summary_text, rightPanelWidth);
         doc.text(summaryLines, rightPanelX, yPos);
-        
-        yPos += summaryLines.length * 4 + 5;
+
+        yPos += summaryLines.length * 6 + 7.5; // 4 * 1.5 and 5 * 1.5
 
         // Core Competencies (4 columns)
         doc.setTextColor(...textDark);
-        doc.setFontSize(12);
+        doc.setFontSize(18); // 12 * 1.5
         doc.setFont('helvetica', 'bold');
         doc.text(translations.resume.skills_title, rightPanelX, yPos);
 
-        yPos += 6;
-        doc.setFontSize(8);
+        yPos += 9; // 6 * 1.5
+        doc.setFontSize(12); // 8 * 1.5
         doc.setFont('helvetica', 'bold');
         doc.setTextColor(...greenDark);
 
@@ -201,30 +224,30 @@ async function generateResumePDF(event) {
 
             doc.setFont('helvetica', 'normal');
             doc.setTextColor(...textGray);
-            doc.setFontSize(7);
+            doc.setFontSize(10.5); // 7 * 1.5
             const itemLines = doc.splitTextToSize(skill.items, colWidth - 5);
-            doc.text(itemLines, xPos, skillYPos + 3);
+            doc.text(itemLines, xPos, skillYPos + 4.5); // 3 * 1.5
 
             col++;
             if (col >= 2) {
                 col = 0;
-                skillYPos += 12;
+                skillYPos += 18; // 12 * 1.5
             }
 
             doc.setFont('helvetica', 'bold');
             doc.setTextColor(...greenDark);
-            doc.setFontSize(8);
+            doc.setFontSize(12); // 8 * 1.5
         });
 
-        yPos = skillYPos + 5;
+        yPos = skillYPos + 7.5; // 5 * 1.5
 
         // Professional Experience
         doc.setTextColor(...textDark);
-        doc.setFontSize(12);
+        doc.setFontSize(18); // 12 * 1.5
         doc.setFont('helvetica', 'bold');
         doc.text(translations.resume.experience_title, rightPanelX, yPos);
 
-        yPos += 6;
+        yPos += 9; // 6 * 1.5
 
         // Add experience items
         experienceData.forEach((exp, index) => {
@@ -238,7 +261,7 @@ async function generateResumePDF(event) {
 
                 // Add "Continued" text on left panel
                 doc.setTextColor(...white);
-                doc.setFontSize(10);
+                doc.setFontSize(15); // 10 * 1.5
                 doc.setFont('helvetica', 'italic');
                 doc.text(currentLang === 'sv' ? 'Fortsättning...' : 'Continued...', leftPanelWidth / 2, 20, { align: 'center' });
 
@@ -246,35 +269,35 @@ async function generateResumePDF(event) {
             }
 
             // Job title and company
-            doc.setFontSize(10);
+            doc.setFontSize(15); // 10 * 1.5
             doc.setFont('helvetica', 'bold');
             doc.setTextColor(...textDark);
             doc.text(exp.title, rightPanelX, yPos);
 
             // Date on the right
             doc.setFont('helvetica', 'normal');
-            doc.setFontSize(8);
+            doc.setFontSize(12); // 8 * 1.5
             doc.setTextColor(...greenDark);
             doc.text(exp.date, rightPanelX + rightPanelWidth - 30, yPos, { align: 'right' });
 
-            yPos += 4;
-            doc.setFontSize(9);
+            yPos += 6; // 4 * 1.5
+            doc.setFontSize(13.5); // 9 * 1.5
             doc.setTextColor(...textGray);
             doc.setFont('helvetica', 'italic');
             doc.text(exp.company, rightPanelX, yPos);
 
-            yPos += 5;
+            yPos += 7.5; // 5 * 1.5
 
             // Responsibilities
             doc.setFont('helvetica', 'normal');
-            doc.setFontSize(8);
+            doc.setFontSize(12); // 8 * 1.5
             exp.responsibilities.forEach(resp => {
                 const respLines = doc.splitTextToSize('• ' + resp, rightPanelWidth - 5);
                 doc.text(respLines, rightPanelX, yPos);
-                yPos += respLines.length * 3.5 + 1;
+                yPos += respLines.length * 5.25 + 1.5; // 3.5 * 1.5 and 1 * 1.5
             });
 
-            yPos += 3;
+            yPos += 4.5; // 3 * 1.5
         });
 
         // Check if we need page 2
@@ -288,12 +311,12 @@ async function generateResumePDF(event) {
             // Languages section on left panel of page 2
             let leftYPos = 20;
             doc.setTextColor(...white);
-            doc.setFontSize(11);
+            doc.setFontSize(16.5); // 11 * 1.5
             doc.setFont('helvetica', 'bold');
-            doc.text(translations.resume.languages_title, 5, leftYPos);
+            doc.text(translations.resume.languages_title, leftPanelWidth / 2, leftYPos, { align: 'center' });
 
-            leftYPos += 7;
-            doc.setFontSize(9);
+            leftYPos += 10.5; // 7 * 1.5
+            doc.setFontSize(13.5); // 9 * 1.5
             doc.setFont('helvetica', 'normal');
 
             const languages = [
@@ -304,14 +327,14 @@ async function generateResumePDF(event) {
 
             languages.forEach(lang => {
                 doc.setFont('helvetica', 'bold');
-                doc.text(lang.name, 5, leftYPos);
-                leftYPos += 4;
+                doc.text(lang.name, leftPanelWidth / 2, leftYPos, { align: 'center' });
+                leftYPos += 6; // 4 * 1.5
                 doc.setFont('helvetica', 'normal');
-                doc.setFontSize(8);
+                doc.setFontSize(12); // 8 * 1.5
                 const levelLines = doc.splitTextToSize(lang.level, leftPanelWidth - 10);
-                doc.text(levelLines, 5, leftYPos);
-                leftYPos += levelLines.length * 4 + 3;
-                doc.setFontSize(9);
+                doc.text(levelLines, leftPanelWidth / 2, leftYPos, { align: 'center' });
+                leftYPos += levelLines.length * 6 + 4.5; // 4 * 1.5 and 3 * 1.5
+                doc.setFontSize(13.5); // 9 * 1.5
             });
 
             yPos = 20;
@@ -319,14 +342,14 @@ async function generateResumePDF(event) {
 
         // Projects section on page 2
         doc.setTextColor(...textDark);
-        doc.setFontSize(12);
+        doc.setFontSize(18); // 12 * 1.5
         doc.setFont('helvetica', 'bold');
         doc.text(translations.resume.projects_title, rightPanelX, yPos);
 
-        yPos += 6;
+        yPos += 9; // 6 * 1.5
 
         // Add projects (compact format)
-        doc.setFontSize(8);
+        doc.setFontSize(12); // 8 * 1.5
         doc.setFont('helvetica', 'normal');
         doc.setTextColor(...textGray);
 
@@ -349,20 +372,20 @@ async function generateResumePDF(event) {
             doc.setFont('helvetica', 'normal');
             doc.setTextColor(...textGray);
             const descLines = doc.splitTextToSize(project.desc, rightPanelWidth - 5);
-            doc.text(descLines, rightPanelX + 3, yPos + 3);
-            yPos += descLines.length * 3 + 4;
+            doc.text(descLines, rightPanelX + 4.5, yPos + 4.5); // 3 * 1.5 and 3 * 1.5
+            yPos += descLines.length * 4.5 + 6; // 3 * 1.5 and 4 * 1.5
         });
 
-        yPos += 3;
+        yPos += 4.5; // 3 * 1.5
 
         // Education section
         doc.setTextColor(...textDark);
-        doc.setFontSize(12);
+        doc.setFontSize(18); // 12 * 1.5
         doc.setFont('helvetica', 'bold');
         doc.text(translations.resume.education_title, rightPanelX, yPos);
 
-        yPos += 6;
-        doc.setFontSize(8);
+        yPos += 9; // 6 * 1.5
+        doc.setFontSize(12); // 8 * 1.5
         doc.setFont('helvetica', 'normal');
         doc.setTextColor(...textGray);
 
@@ -377,7 +400,7 @@ async function generateResumePDF(event) {
             doc.setTextColor(...textDark);
             const eduLines = doc.splitTextToSize(edu.name + ' - ' + edu.desc, rightPanelWidth - 5);
             doc.text(eduLines, rightPanelX, yPos);
-            yPos += eduLines.length * 3.5 + 2;
+            yPos += eduLines.length * 5.25 + 3; // 3.5 * 1.5 and 2 * 1.5
             doc.setFont('helvetica', 'normal');
             doc.setTextColor(...textGray);
         });
@@ -386,7 +409,7 @@ async function generateResumePDF(event) {
         doc.setFont('helvetica', 'bold');
         doc.setTextColor(...textDark);
         doc.text(translations.resume.edu_cert_title + ':', rightPanelX, yPos);
-        yPos += 3;
+        yPos += 4.5; // 3 * 1.5
         doc.setFont('helvetica', 'normal');
         doc.setTextColor(...textGray);
         const certLines = doc.splitTextToSize(translations.resume.edu_cert_list, rightPanelWidth - 5);
